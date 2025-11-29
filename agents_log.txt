@@ -1,0 +1,12 @@
+# Agents Coordination Log - Context Windows Research Project
+# Format: [TIMESTAMP] [AGENT_NAME] [STATUS] Message
+# Status Types: [STARTED], [PROGRESS], [COMPLETED], [ERROR], [WAITING], [BLOCKED]
+#
+# This file enables parallel agent coordination. All agents read this log before
+# starting work and write their status updates here.
+#
+# Example entries:
+# [2025-11-29 14:00:00] [infrastructure-builder] [STARTED] Creating project infrastructure
+# [2025-11-29 14:01:30] [infrastructure-builder] [COMPLETED] Project infrastructure ready
+# [2025-11-29 14:02:00] [experiment-1-developer] [STARTED] Implementing Lost in the Middle
+#
