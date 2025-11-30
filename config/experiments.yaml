@@ -1,0 +1,148 @@
+# Experiment Configuration
+# Context Windows Research Project
+
+general:
+  random_seed: 42
+  num_runs: 3
+  ollama_model: "llama2:13b"
+  output_dir: "results/"
+  log_level: "INFO"
+
+# Experiment 1: Lost in the Middle
+experiment_1:
+  name: "Lost in the Middle"
+  enabled: true
+  num_documents: 5
+  words_per_document: 200
+  word_variance: 20
+  fact_positions: ["start", "middle", "end"]
+  num_trials_per_position: 10
+  query_template: "What is the CEO's name?"
+
+  # Optional enhancements
+  variations:
+    document_length:
+      enabled: false
+      lengths: [100, 200, 500, 1000]
+
+    fact_salience:
+      enabled: false
+      levels: ["high", "low"]
+
+    prompt_engineering:
+      enabled: false
+      prompts:
+        baseline: "What is the CEO's name?"
+        enhanced: "Carefully review all documents. What is the CEO's name?"
+
+# Experiment 2: Context Size Impact
+experiment_2:
+  name: "Context Size Impact"
+  enabled: true
+  context_sizes: [2, 5, 10, 20, 50]
+  document_length: 200
+  task_types: ["simple", "complex"]
+  num_trials_per_size: 5
+
+  # Simple task configuration
+  simple_task:
+    query_template: "What is the main topic of document {doc_num}?"
+
+  # Complex task configuration
+  complex_task:
+    query_template: "Compare arguments in documents {doc_nums}. Which is most compelling?"
+    num_docs_to_compare: 3
+
+# Experiment 3: RAG Impact
+experiment_3:
+  name: "RAG Impact"
+  enabled: true
+  corpus_path: "data/corpora/hebrew_corpus/"
+  min_corpus_size: 20
+  chunk_size: 500
+  chunk_overlap: 50
+  top_k_values: [1, 2, 3, 5, 7, 10]
+  embedding_model: "nomic-embed-text"
+
+  # Vector store configuration
+  vector_store:
+    type: "chromadb"
+    persist_directory: "data/chroma_db"
+    collection_name: "context_windows_corpus"
+
+  # Query types
+  query_types:
+    factual:
+      enabled: true
+      num_queries: 10
+    analytical:
+      enabled: true
+      num_queries: 10
+
+# Experiment 4: Context Engineering Strategies
+experiment_4:
+  name: "Context Engineering Strategies"
+  enabled: true
+  num_steps: 10
+  strategies: ["select", "compress", "write", "hybrid"]
+  max_tokens: 2000
+
+  # Strategy-specific parameters
+  select_strategy:
+    top_k: 5
+    similarity_threshold: 0.7
+
+  compress_strategy:
+    compression_ratio: 0.5
+    min_length: 100
+
+  write_strategy:
+    max_facts: 50
+    fact_extraction_prompt: "Extract key facts from the following text:"
+
+  hybrid_strategy:
+    use_select: true
+    use_compress: true
+    select_first: true
+
+  # Scenarios
+  scenarios:
+    - name: "Sequential Data Collection"
+      type: "sequential"
+      tokens_per_step: 100
+
+    - name: "Multi-Step Reasoning"
+      type: "reasoning"
+      tokens_per_step: 150
+
+    - name: "Adversarial"
+      type: "adversarial"
+      tokens_per_step: 120
+      contradiction_step: 5
+
+# Statistical Analysis Configuration
+statistics:
+  alpha: 0.05
+  power: 0.80
+  effect_size_threshold: 0.5
+  confidence_interval: 0.95
+
+  # Tests to perform
+  tests:
+    - "anova"
+    - "t_test"
+    - "regression"
+    - "correlation"
+
+# Visualization Configuration
+visualization:
+  dpi: 300
+  figure_format: "png"
+  style: "seaborn-v0_8-paper"
+  color_palette: "colorblind"
+
+  # Figure sizes (width, height in inches)
+  figure_sizes:
+    single: [8, 6]
+    panel: [12, 8]
+    multi_panel: [16, 10]

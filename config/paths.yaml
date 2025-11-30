@@ -1,0 +1,80 @@
+# File Paths Configuration
+# Context Windows Research Project
+
+# Base directories
+base:
+  project_root: "."
+  src: "src"
+  data: "data"
+  results: "results"
+  tests: "tests"
+  config: "config"
+  scripts: "scripts"
+  docs: "docs"
+  notebooks: "notebooks"
+
+# Data paths
+data:
+  corpora: "data/corpora"
+  hebrew_corpus: "data/corpora/hebrew_corpus"
+  synthetic: "data/corpora/synthetic"
+  ground_truth: "data/ground_truth"
+  queries: "data/ground_truth/queries.json"
+  answers: "data/ground_truth/answers.json"
+  chroma_db: "data/chroma_db"
+
+# Results paths
+results:
+  raw: "results/raw"
+  processed: "results/processed"
+  figures: "results/figures"
+  reports: "results/reports"
+
+  # Experiment-specific subdirectories
+  experiment_1:
+    raw: "results/raw/experiment_1"
+    processed: "results/processed/experiment_1"
+    figures: "results/figures/experiment_1"
+    report: "results/reports/experiment_1_report.md"
+
+  experiment_2:
+    raw: "results/raw/experiment_2"
+    processed: "results/processed/experiment_2"
+    figures: "results/figures/experiment_2"
+    report: "results/reports/experiment_2_report.md"
+
+  experiment_3:
+    raw: "results/raw/experiment_3"
+    processed: "results/processed/experiment_3"
+    figures: "results/figures/experiment_3"
+    report: "results/reports/experiment_3_report.md"
+
+  experiment_4:
+    raw: "results/raw/experiment_4"
+    processed: "results/processed/experiment_4"
+    figures: "results/figures/experiment_4"
+    report: "results/reports/experiment_4_report.md"
+
+# Logs
+logs:
+  directory: "logs"
+  experiment_log: "logs/experiment.log"
+  error_log: "logs/error.log"
+  debug_log: "logs/debug.log"
+
+# Documentation
+docs:
+  prd: "docs/PRD.md"
+  architecture: "docs/ARCHITECTURE.md"
+  api: "docs/API.md"
+  methodology: "docs/RESEARCH_METHODOLOGY.md"
+  statistics: "docs/STATISTICAL_ANALYSIS.md"
+  user_guide: "docs/USER_GUIDE.md"
+  final_report: "docs/FINAL_REPORT.md"
+
+# Scripts
+scripts:
+  run_experiments: "scripts/run_experiments.py"
+  generate_corpus: "scripts/generate_corpus.py"
+  validate_results: "scripts/validate_results.py"
+  create_report: "scripts/create_report.py"

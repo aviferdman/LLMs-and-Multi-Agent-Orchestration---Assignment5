@@ -1,0 +1,56 @@
+{
+  "summary_statistics": {
+    "select": {
+      "mean_accuracy": 0.0,
+      "std_accuracy": 0.0,
+      "mean_context_size": 39.3,
+      "std_context_size": 14.360013927569847,
+      "mean_latency": 3.344217936197917e-05,
+      "std_latency": 0.00018009164737401,
+      "total_compressions": 0
+    },
+    "compress": {
+      "mean_accuracy": 0.0,
+      "std_accuracy": 0.0,
+      "mean_context_size": 54.6,
+      "std_context_size": 29.141722666994138,
+      "mean_latency": 0.0,
+      "std_latency": 0.0,
+      "total_compressions": 0
+    },
+    "write": {
+      "mean_accuracy": 0.0,
+      "std_accuracy": 0.0,
+      "mean_context_size": 52.0,
+      "std_context_size": 27.575351312358652,
+      "mean_latency": 0.0,
+      "std_latency": 0.0,
+      "total_compressions": 0
+    },
+    "hybrid": {
+      "mean_accuracy": 0.0,
+      "std_accuracy": 0.0,
+      "mean_context_size": 39.3,
+      "std_context_size": 14.360013927569847,
+      "mean_latency": 0.0,
+      "std_latency": 0.0,
+      "total_compressions": 0
+    }
+  },
+  "analysis": {
+    "strategy_rankings": {
+      "select": 1,
+      "compress": 2,
+      "write": 3,
+      "hybrid": 4
+    },
+    "best_strategy": "select",
+    "recommendations": {
+      "select": "Memory efficient, Fast response",
+      "compress": "Memory efficient, Fast response",
+      "write": "Memory efficient, Fast response",
+      "hybrid": "Memory efficient, Fast response"
+    }
+  },
+  "timestamp": "2025-11-30T20:51:12.520997"
+}

@@ -1,0 +1,46 @@
+================================================================================
+EXPERIMENT 4: Context Engineering Strategies - Test Results
+================================================================================
+
+Test Date: 2025-11-30 20:51:12
+
+STRATEGY PERFORMANCE SUMMARY
+--------------------------------------------------------------------------------
+
+SELECT Strategy:
+  Mean Accuracy: 0.000 ± 0.000
+  Mean Context Size: 39.3 ± 14.4 tokens
+  Mean Latency: 0.000 ± 0.000 seconds
+  Total Compressions: 0
+  Recommendation: Memory efficient, Fast response
+
+COMPRESS Strategy:
+  Mean Accuracy: 0.000 ± 0.000
+  Mean Context Size: 54.6 ± 29.1 tokens
+  Mean Latency: 0.000 ± 0.000 seconds
+  Total Compressions: 0
+  Recommendation: Memory efficient, Fast response
+
+WRITE Strategy:
+  Mean Accuracy: 0.000 ± 0.000
+  Mean Context Size: 52.0 ± 27.6 tokens
+  Mean Latency: 0.000 ± 0.000 seconds
+  Total Compressions: 0
+  Recommendation: Memory efficient, Fast response
+
+HYBRID Strategy:
+  Mean Accuracy: 0.000 ± 0.000
+  Mean Context Size: 39.3 ± 14.4 tokens
+  Mean Latency: 0.000 ± 0.000 seconds
+  Total Compressions: 0
+  Recommendation: Memory efficient, Fast response
+
+STRATEGY RANKINGS
+--------------------------------------------------------------------------------
+
+  Rank 1: SELECT
+  Rank 2: COMPRESS
+  Rank 3: WRITE
+  Rank 4: HYBRID
+
+Best Strategy: SELECT

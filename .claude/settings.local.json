@@ -1,0 +1,16 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(dir:*)",
+      "SlashCommand(/setup-project)",
+      "Bash(python:*)",
+      "Bash(tree:*)",
+      "Bash(pip install:*)",
+      "Bash(cat:*)",
+      "Bash(PYTHONPATH=. python:*)",
+      "Bash(xargs cat:*)"
+    ],
+    "deny": [],
+    "ask": []
+  }
+}

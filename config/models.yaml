@@ -1,0 +1,73 @@
+# LLM Model Configuration
+# Context Windows Research Project
+
+# Ollama Models
+ollama:
+  base_url: "http://localhost:11434"
+  timeout: 120
+
+  models:
+    llama2_13b:
+      name: "llama2:13b"
+      context_window: 4096
+      temperature: 0.7
+      top_p: 0.9
+      max_tokens: 512
+
+    llama2_7b:
+      name: "llama2:7b"
+      context_window: 4096
+      temperature: 0.7
+      top_p: 0.9
+      max_tokens: 512
+
+    mistral:
+      name: "mistral:latest"
+      context_window: 8192
+      temperature: 0.7
+      top_p: 0.9
+      max_tokens: 512
+
+# OpenAI Models (optional)
+openai:
+  enabled: false
+  api_key_env: "OPENAI_API_KEY"
+
+  models:
+    gpt_3_5_turbo:
+      name: "gpt-3.5-turbo"
+      context_window: 16385
+      temperature: 0.7
+      max_tokens: 512
+
+    gpt_4:
+      name: "gpt-4"
+      context_window: 8192
+      temperature: 0.7
+      max_tokens: 512
+
+# Embedding Models
+embeddings:
+  default: "nomic-embed-text"
+
+  models:
+    nomic_embed:
+      name: "nomic-embed-text"
+      dimensions: 768
+      provider: "ollama"
+
+    minilm:
+      name: "all-MiniLM-L6-v2"
+      dimensions: 384
+      provider: "sentence-transformers"
+
+# Retry Configuration
+retry:
+  max_attempts: 3
+  backoff_factor: 2
+  initial_delay: 1
+
+# Rate Limiting
+rate_limit:
+  requests_per_minute: 60
+  requests_per_hour: 1000
