@@ -153,11 +153,14 @@ python scripts/generate_exp4_visualizations.py
 ## 🧪 Testing
 
 ```bash
-# Run all tests (181 tests)
+# Run all tests (215 tests including script tests)
 pytest tests/ -v
 
 # Run with coverage report
-pytest tests/ --cov=src --cov-report=html --cov-config=.coveragerc
+pytest tests/ --cov=src --cov=scripts --cov-report=html --cov-config=.coveragerc
+
+# Run script tests specifically
+pytest tests/test_scripts.py -v --cov=scripts --cov-report=term-missing
 
 # View coverage
 open htmlcov/index.html  # Linux/Mac
@@ -172,6 +175,14 @@ start htmlcov/index.html # Windows
 # - statistics.py: 87.34%
 # - rag_pipeline.py: 85.37%
 # Overall: 93.69% coverage with 181 passing tests
+
+# Script coverage (>85% target achieved):
+# - run_experiment_1.py: 100.00%
+# - generate_exp1_visualizations.py: 97.41%
+# - generate_exp3_visualizations.py: 97.22%
+# - generate_exp4_visualizations.py: 98.01%
+# Average script coverage: 98.16%
+# See docs/TEST_COVERAGE_REPORT.md for details
 ```
 
 ## 📈 Results Summary
@@ -212,6 +223,7 @@ Comprehensive documentation available in `docs/`:
 - **[ARCHITECTURE.md](docs/ARCHITECTURE.md)** - System architecture and design decisions
 - **[USER_GUIDE.md](docs/USER_GUIDE.md)** - Comprehensive usage guide
 - **[API.md](docs/API.md)** - API reference and code documentation
+- **[TEST_COVERAGE_REPORT.md](docs/TEST_COVERAGE_REPORT.md)** - Comprehensive test coverage report (>85% for scripts)
 
 ## 🔬 Research Quality
 
@@ -222,7 +234,8 @@ This project demonstrates graduate-level research rigor:
 - ✅ **Publication Quality**: 13 figures at 300 DPI with clear legends
 - ✅ **Documentation**: Comprehensive methodology and analysis
 - ✅ **Real-World**: Production LLM (220 actual queries)
-- ✅ **Validated**: 39 unit tests, all passing
+- ✅ **Validated**: 215+ tests, all passing
+- ✅ **Test Coverage**: >85% for all core modules and scripts (98.16% average for scripts)
 
 ## 🎓 Key Contributions
 
@@ -294,29 +307,374 @@ Development dependencies:
 
 ## 🐛 Troubleshooting
 
-### Ollama Connection Issues
+### Common Issues and Solutions
+
+#### 1. Ollama Connection Issues
+
+**Problem**: `ConnectionError: Cannot connect to Ollama at http://localhost:11434`
+
+**Causes**:
+- Ollama server not running
+- Wrong port or URL
+- Firewall blocking connection
+
+**Solutions**:
 ```bash
-# Check Ollama is running
+# Check if Ollama is running
 curl http://localhost:11434/api/version
 
-# Start Ollama
+# Start Ollama (if not running)
 ollama serve
+
+# Test connection from Python
+python test_ollama_connection.py
+
+# Check if model is available
+ollama list
+
+# Pull model if missing
+ollama pull llama2:latest
+
+# Verify in config
+# Edit config/experiments.yaml to match your setup:
+# models:
+#   ollama:
+#     base_url: "http://localhost:11434"
 ```
 
-### Memory Issues
+**Alternative Base URL**:
 ```bash
-# Reduce batch size in config/experiments.yaml
-# Or run experiments individually
+# If Ollama is on a different host/port
+export OLLAMA_BASE_URL="http://custom-host:11434"
 ```
 
-### Test Failures
+#### 2. Model Not Found
+
+**Problem**: `RuntimeError: Model 'llama2:latest' not found`
+
+**Solutions**:
 ```bash
-# Verify environment
-python -m pytest tests/ -v
+# List available models
+ollama list
 
-# Check dependencies
-pip install -e . --force-reinstall
+# Pull the required model (5GB+ download)
+ollama pull llama2:latest
+
+# Or use a different model
+export OLLAMA_MODEL="mistral:latest"
+ollama pull mistral:latest
+
+# Update config/experiments.yaml
+# general:
+#   ollama_model: "mistral:latest"
 ```
+
+#### 3. Memory Issues
+
+**Problem**: `MemoryError` or system becomes unresponsive
+
+**Causes**:
+- Large context windows (20+ documents)
+- Insufficient RAM for model
+- Too many concurrent experiments
+
+**Solutions**:
+```bash
+# Option 1: Reduce context size
+# Edit config/experiments.yaml:
+# experiment_2:
+#   document_counts: [5, 10]  # Remove 20
+
+# Option 2: Run experiments individually
+python scripts/run_experiment_1_ollama.py
+python scripts/run_experiment_2_ollama.py
+
+# Option 3: Use smaller model
+ollama pull llama2:7b-chat  # Smaller than latest
+
+# Option 4: Close other applications
+# Free up system memory before running experiments
+
+# Option 5: Increase system swap/page file
+# Windows: System Properties > Performance > Virtual Memory
+# Linux: sudo swapon --show
+```
+
+#### 4. Query Timeout
+
+**Problem**: `RuntimeError: Query timeout after 3 attempts`
+
+**Causes**:
+- Slow model inference
+- Large context requiring more time
+- System resource constraints
+
+**Solutions**:
+```python
+# Increase timeout in code
+from src.llm_interface import OllamaInterface
+
+llm = OllamaInterface(
+    model="llama2:latest",
+    timeout=120,  # Increase from 60 to 120 seconds
+    max_retries=5  # More retry attempts
+)
+
+# Or reduce context size
+# Edit config/experiments.yaml to use fewer documents
+```
+
+#### 5. Test Failures
+
+**Problem**: Tests fail with import errors or assertion errors
+
+**Solutions**:
+```bash
+# Step 1: Verify Python version
+python --version  # Should be 3.11+
+
+# Step 2: Recreate virtual environment
+deactivate  # If in venv
+rm -rf venv  # Remove old venv
+python -m venv venv
+source venv/bin/activate  # Windows: venv\Scripts\activate
+
+# Step 3: Reinstall dependencies
+pip install --upgrade pip
+pip install -r requirements.txt
+pip install -e .
+
+# Step 4: Run tests with verbose output
+pytest tests/ -v --tb=short
+
+# Step 5: Run specific failing test
+pytest tests/test_llm_interface.py::TestOllamaInterface::test_query_success -v
+
+# Step 6: Check for file locks (Windows)
+# Close any programs accessing project files
+
+# Step 7: Clear pytest cache
+pytest --cache-clear
+rm -rf .pytest_cache __pycache__
+```
+
+#### 6. Import Errors
+
+**Problem**: `ModuleNotFoundError: No module named 'src'`
+
+**Solutions**:
+```bash
+# Install in editable mode
+pip install -e .
+
+# Or add to PYTHONPATH
+export PYTHONPATH="${PYTHONPATH}:$(pwd)"  # Linux/Mac
+set PYTHONPATH=%PYTHONPATH%;%CD%  # Windows CMD
+
+# Verify installation
+python -c "from src.config import Config; print('OK')"
+```
+
+#### 7. Visualization Errors
+
+**Problem**: Plots not generated or display errors
+
+**Solutions**:
+```bash
+# Install visualization dependencies
+pip install matplotlib seaborn pandas
+
+# For headless systems (servers without display)
+export MPLBACKEND=Agg  # Use non-interactive backend
+
+# Check output directory exists
+ls results/figures/  # Should exist
+
+# Regenerate visualizations
+python scripts/generate_exp1_visualizations.py
+
+# Verify file permissions
+chmod 755 results/figures/  # Linux/Mac
+```
+
+#### 8. Configuration Issues
+
+**Problem**: `FileNotFoundError: config/experiments.yaml not found`
+
+**Solutions**:
+```bash
+# Verify current directory
+pwd  # Should be project root
+
+# Check config files exist
+ls config/
+# Should show: experiments.yaml, models.yaml, paths.yaml
+
+# Restore from backup or repository
+git checkout config/experiments.yaml
+
+# Run from correct directory
+cd /path/to/llm-context-windows-research
+python scripts/run_experiment_1_ollama.py
+```
+
+#### 9. Results Not Saving
+
+**Problem**: Experiment runs but results not saved
+
+**Solutions**:
+```bash
+# Check results directory
+mkdir -p results/raw results/processed results/figures
+
+# Verify write permissions
+ls -la results/  # Should be writable
+
+# Check disk space
+df -h  # Linux/Mac
+dir C:\  # Windows
+
+# View logs for errors
+# Logs show file I/O operations
+
+# Manually specify output directory
+export OUTPUT_DIR="/custom/path/results"
+```
+
+#### 10. Slow Performance
+
+**Problem**: Experiments run very slowly
+
+**Solutions**:
+```bash
+# Use GPU if available
+# Ollama automatically uses GPU if detected
+
+# Check GPU utilization (if using GPU)
+nvidia-smi  # Should show Ollama using GPU
+
+# Reduce number of queries per experiment
+# Edit config/experiments.yaml:
+# experiment_1:
+#   num_queries: 10  # Reduce from 20
+
+# Use smaller model
+ollama pull llama2:7b-chat
+
+# Close background applications
+# Free CPU/GPU resources
+
+# Run one experiment at a time
+# Don't run multiple experiments concurrently
+```
+
+#### 11. Windows-Specific Issues
+
+**Problem**: Path errors or command not found on Windows
+
+**Solutions**:
+```powershell
+# Use PowerShell instead of CMD
+# Activate venv
+.\venv\Scripts\Activate.ps1
+
+# Use correct path separators
+python scripts\run_experiment_1_ollama.py
+
+# Enable long path support (Windows 10+)
+# Computer Configuration > Administrative Templates > System > Filesystem
+# Enable "Enable Win32 long paths"
+
+# Or use WSL (Windows Subsystem for Linux)
+wsl --install
+# Then follow Linux instructions
+```
+
+#### 12. Coverage Report Issues
+
+**Problem**: Coverage report not generated or shows 0%
+
+**Solutions**:
+```bash
+# Install pytest-cov
+pip install pytest-cov
+
+# Use correct configuration
+pytest tests/ --cov=src --cov-report=html --cov-config=.coveragerc
+
+# Check .coveragerc exists
+cat .coveragerc
+
+# View HTML report
+start htmlcov/index.html  # Windows
+open htmlcov/index.html   # Mac
+xdg-open htmlcov/index.html  # Linux
+
+# Force regeneration
+rm -rf .coverage htmlcov/
+pytest tests/ --cov=src --cov-report=html
+```
+
+### Getting More Help
+
+#### Debug Mode
+
+Enable debug logging for more information:
+```python
+import logging
+logging.basicConfig(level=logging.DEBUG)
+
+# Then run your script
+python scripts/run_experiment_1_ollama.py
+```
+
+#### Minimal Reproduction
+
+Create a minimal test case:
+```python
+# test_minimal.py
+from src.llm_interface import OllamaInterface
+
+llm = OllamaInterface(model="llama2:latest")
+response = llm.query("Test context", "Test question?")
+print(f"Response: {response.text}")
+print(f"Latency: {response.latency}s")
+```
+
+#### System Information
+
+Collect system info for bug reports:
+```bash
+# Python version
+python --version
+
+# Package versions
+pip freeze > installed_packages.txt
+
+# System info
+uname -a  # Linux/Mac
+systeminfo  # Windows
+
+# Ollama version
+ollama --version
+
+# Available models
+ollama list
+```
+
+### Still Need Help?
+
+If the above solutions don't resolve your issue:
+
+1. **Check Documentation**: Review `docs/` for detailed information
+2. **Search Issues**: Check existing [GitHub issues](https://github.com/your-repo/issues)
+3. **Create Issue**: Open a new issue with:
+   - Python version and OS
+   - Complete error message/traceback
+   - Steps to reproduce
+   - What you've tried
+   - System specifications (RAM, CPU, GPU)
+4. **Community**: Ask in discussions or relevant forums
 
 ## 📞 Support
 

@@ -1,0 +1,90 @@
+cff-version: 1.2.0
+message: "If you use this software in your research, please cite it as below."
+type: software
+title: "LLM Context Windows Research: Empirical Analysis of Position Effects, Context Size Impact, and RAG Performance"
+version: 1.0.0
+date-released: 2025-12-01
+abstract: |
+  A comprehensive empirical study of context window effects in Large Language Models (LLMs),
+  investigating position bias, context size impact, retrieval-augmented generation (RAG)
+  performance, and context management strategies. This research provides systematic evaluation
+  of Llama 2 7B model using 220 real queries across 4 experiments, identifying critical
+  performance thresholds and quantifying the benefits of different context management approaches.
+
+authors:
+  - family-names: "Ferdman"
+    given-names: "A."
+    affiliation: "MLDS - LLMs and Multi-Agent Orchestration"
+
+repository-code: "https://github.com/your-username/llm-context-windows-research"
+url: "https://github.com/your-username/llm-context-windows-research"
+license: MIT
+keywords:
+  - large language models
+  - context windows
+  - retrieval augmented generation
+  - RAG
+  - llama2
+  - natural language processing
+  - machine learning
+  - empirical evaluation
+  - performance analysis
+  - context management
+
+references:
+  - type: article
+    title: "Lost in the Middle: How Language Models Use Long Contexts"
+    authors:
+      - family-names: "Liu"
+        given-names: "Nelson F."
+    year: 2023
+    journal: "arXiv preprint"
+    url: "https://arxiv.org/abs/2307.03172"
+
+  - type: software
+    title: "Ollama: Get up and running with large language models locally"
+    url: "https://ollama.ai"
+    year: 2023
+
+preferred-citation:
+  type: software
+  title: "LLM Context Windows Research: Empirical Analysis of Position Effects, Context Size Impact, and RAG Performance"
+  authors:
+    - family-names: "Ferdman"
+      given-names: "A."
+  year: 2025
+  month: 12
+  version: 1.0.0
+  abstract: |
+    An empirical study evaluating context window effects in Large Language Models through
+    220 real queries across 4 systematic experiments, providing quantitative evidence for
+    the 2,500-token performance cliff in Llama 2 7B and demonstrating a 23.3% accuracy
+    improvement using retrieval-augmented generation over full-context approaches.
+
+# Citation Examples:
+
+# APA Style:
+# Ferdman, A. (2025). LLM Context Windows Research: Empirical Analysis of Position Effects,
+# Context Size Impact, and RAG Performance (Version 1.0.0) [Computer software].
+# https://github.com/your-username/llm-context-windows-research
+
+# BibTeX:
+# @software{ferdman2025llm,
+#   author = {Ferdman, A.},
+#   title = {LLM Context Windows Research: Empirical Analysis of Position Effects,
+#            Context Size Impact, and RAG Performance},
+#   year = {2025},
+#   version = {1.0.0},
+#   url = {https://github.com/your-username/llm-context-windows-research},
+#   license = {MIT}
+# }
+
+# IEEE Style:
+# A. Ferdman, "LLM Context Windows Research: Empirical Analysis of Position Effects,
+# Context Size Impact, and RAG Performance," version 1.0.0, 2025. [Online].
+# Available: https://github.com/your-username/llm-context-windows-research
+
+# For academic publications citing this work:
+# Please reference the specific experiments used and include the version number.
+# Example: "Using the context window evaluation framework (Ferdman, 2025, v1.0.0),
+# we conducted experiments to assess..."
