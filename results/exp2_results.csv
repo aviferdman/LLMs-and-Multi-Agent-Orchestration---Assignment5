@@ -1,16 +1,16 @@
 num_documents,context_tokens,total_tokens,target_doc_index,query,target_answer,response,is_correct,accuracy,semantic_similarity,latency,response_tokens,task_type,timestamp
-2,582,588,0,What is the CEO's name?,David Cohen,The CEO's name is David Cohen.,True,1.0,0.14285714285714285,0.8739073000818308,7,simple,2025-11-30T20:49:48.030607
-2,583,589,0,What is the CEO's name?,Sarah Williams,The CEO's name is Sarah Williams.,True,1.0,0.14285714285714285,0.6574250836504598,7,simple,2025-11-30T20:49:48.082026
-2,542,548,1,What is the CEO's name?,Michael Brown,The CEO's name is Michael Brown.,True,1.0,0.14285714285714285,0.8352665418846559,7,simple,2025-11-30T20:49:48.133436
-5,1354,1360,4,What is the CEO's name?,Sarah Williams,The CEO's name is Sarah Williams.,True,1.0,0.14285714285714285,1.2137017332034827,7,simple,2025-11-30T20:49:48.185102
-5,1368,1374,3,What is the CEO's name?,Michael Brown,The CEO's name is Michael Brown.,True,1.0,0.14285714285714285,1.3074269294896714,7,simple,2025-11-30T20:49:48.237422
-5,1394,1400,3,What is the CEO's name?,Michael Brown,The CEO's name is Michael Brown.,True,1.0,0.14285714285714285,1.2699582915145766,7,simple,2025-11-30T20:49:48.288838
-10,2750,2756,2,What is the CEO's name?,Michael Brown,I couldn't find that information in the provided context.,False,0.0,0.0,2.5822634555704314,11,simple,2025-11-30T20:49:48.340857
-10,2696,2702,4,What is the CEO's name?,Michael Brown,The CEO's name is Michael Brown.,True,1.0,0.14285714285714285,2.682660526705456,7,simple,2025-11-30T20:49:48.392661
-10,2667,2673,1,What is the CEO's name?,Sarah Williams,The CEO's name is Sarah Williams.,True,1.0,0.14285714285714285,2.4692681476866447,7,simple,2025-11-30T20:49:48.445096
-20,5479,5485,14,What is the CEO's name?,David Cohen,The CEO's name is David Cohen.,True,1.0,0.14285714285714285,6.649958473520849,7,simple,2025-11-30T20:49:48.498425
-20,5344,5350,2,What is the CEO's name?,Sarah Williams,The CEO's name is Sarah Williams.,True,1.0,0.14285714285714285,6.598756685306195,7,simple,2025-11-30T20:49:48.553758
-20,5441,5447,1,What is the CEO's name?,David Cohen,The CEO's name is David Cohen.,True,1.0,0.14285714285714285,6.570310098345997,7,simple,2025-11-30T20:49:48.606696
-50,13235,13241,28,What is the CEO's name?,Michael Brown,The information about the CEO is not clear from the documents.,False,0.0,0.0,30.67799765973814,14,simple,2025-11-30T20:49:48.663236
-50,13634,13640,30,What is the CEO's name?,David Cohen,The CEO's name is David Cohen.,True,1.0,0.14285714285714285,30.458794858725742,7,simple,2025-11-30T20:49:48.721811
-50,13599,13605,39,What is the CEO's name?,David Cohen,The information about the CEO is not clear from the documents.,False,0.0,0.0,30.689576592179243,14,simple,2025-11-30T20:49:48.778842
+2,582,588,0,What is the CEO's name?,David Cohen,The CEO's name is David Cohen.,True,1.0,0.14285714285714285,0.8739073000818308,7,simple,2025-12-01T09:36:51.622211
+2,583,589,0,What is the CEO's name?,Sarah Williams,The CEO's name is Sarah Williams.,True,1.0,0.14285714285714285,0.6574250836504598,7,simple,2025-12-01T09:36:51.673794
+2,542,548,1,What is the CEO's name?,Michael Brown,The CEO's name is Michael Brown.,True,1.0,0.14285714285714285,0.8352665418846559,7,simple,2025-12-01T09:36:51.725474
+5,1354,1360,4,What is the CEO's name?,Sarah Williams,The CEO's name is Sarah Williams.,True,1.0,0.14285714285714285,1.2137017332034827,7,simple,2025-12-01T09:36:51.777474
+5,1368,1374,3,What is the CEO's name?,Michael Brown,The CEO's name is Michael Brown.,True,1.0,0.14285714285714285,1.3074269294896714,7,simple,2025-12-01T09:36:51.829388
+5,1394,1400,3,What is the CEO's name?,Michael Brown,The CEO's name is Michael Brown.,True,1.0,0.14285714285714285,1.2699582915145766,7,simple,2025-12-01T09:36:51.881354
+10,2750,2756,2,What is the CEO's name?,Michael Brown,I couldn't find that information in the provided context.,False,0.0,0.0,2.5822634555704314,11,simple,2025-12-01T09:36:51.934704
+10,2696,2702,4,What is the CEO's name?,Michael Brown,The CEO's name is Michael Brown.,True,1.0,0.14285714285714285,2.682660526705456,7,simple,2025-12-01T09:36:51.987327
+10,2667,2673,1,What is the CEO's name?,Sarah Williams,The CEO's name is Sarah Williams.,True,1.0,0.14285714285714285,2.4692681476866447,7,simple,2025-12-01T09:36:52.039859
+20,5479,5485,14,What is the CEO's name?,David Cohen,The CEO's name is David Cohen.,True,1.0,0.14285714285714285,6.649958473520849,7,simple,2025-12-01T09:36:52.093198
+20,5344,5350,2,What is the CEO's name?,Sarah Williams,The CEO's name is Sarah Williams.,True,1.0,0.14285714285714285,6.598756685306195,7,simple,2025-12-01T09:36:52.146535
+20,5441,5447,1,What is the CEO's name?,David Cohen,The CEO's name is David Cohen.,True,1.0,0.14285714285714285,6.570310098345997,7,simple,2025-12-01T09:36:52.200560
+50,13235,13241,28,What is the CEO's name?,Michael Brown,The information about the CEO is not clear from the documents.,False,0.0,0.0,30.67799765973814,14,simple,2025-12-01T09:36:52.257963
+50,13634,13640,30,What is the CEO's name?,David Cohen,The CEO's name is David Cohen.,True,1.0,0.14285714285714285,30.458794858725742,7,simple,2025-12-01T09:36:52.314861
+50,13599,13605,39,What is the CEO's name?,David Cohen,The information about the CEO is not clear from the documents.,False,0.0,0.0,30.689576592179243,14,simple,2025-12-01T09:36:52.371522

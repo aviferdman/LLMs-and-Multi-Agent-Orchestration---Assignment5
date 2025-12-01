@@ -13,7 +13,7 @@
     "latency": 0.8739073000818308,
     "response_tokens": 7,
     "task_type": "simple",
-    "timestamp": "2025-11-30T20:49:48.030607"
+    "timestamp": "2025-12-01T09:36:51.622211"
   },
   {
     "num_documents": 2,
@@ -29,7 +29,7 @@
     "latency": 0.6574250836504598,
     "response_tokens": 7,
     "task_type": "simple",
-    "timestamp": "2025-11-30T20:49:48.082026"
+    "timestamp": "2025-12-01T09:36:51.673794"
   },
   {
     "num_documents": 2,
@@ -45,7 +45,7 @@
     "latency": 0.8352665418846559,
     "response_tokens": 7,
     "task_type": "simple",
-    "timestamp": "2025-11-30T20:49:48.133436"
+    "timestamp": "2025-12-01T09:36:51.725474"
   },
   {
     "num_documents": 5,
@@ -61,7 +61,7 @@
     "latency": 1.2137017332034827,
     "response_tokens": 7,
     "task_type": "simple",
-    "timestamp": "2025-11-30T20:49:48.185102"
+    "timestamp": "2025-12-01T09:36:51.777474"
   },
   {
     "num_documents": 5,
@@ -77,7 +77,7 @@
     "latency": 1.3074269294896714,
     "response_tokens": 7,
     "task_type": "simple",
-    "timestamp": "2025-11-30T20:49:48.237422"
+    "timestamp": "2025-12-01T09:36:51.829388"
   },
   {
     "num_documents": 5,
@@ -93,7 +93,7 @@
     "latency": 1.2699582915145766,
     "response_tokens": 7,
     "task_type": "simple",
-    "timestamp": "2025-11-30T20:49:48.288838"
+    "timestamp": "2025-12-01T09:36:51.881354"
   },
   {
     "num_documents": 10,
@@ -109,7 +109,7 @@
     "latency": 2.5822634555704314,
     "response_tokens": 11,
     "task_type": "simple",
-    "timestamp": "2025-11-30T20:49:48.340857"
+    "timestamp": "2025-12-01T09:36:51.934704"
   },
   {
     "num_documents": 10,
@@ -125,7 +125,7 @@
     "latency": 2.682660526705456,
     "response_tokens": 7,
     "task_type": "simple",
-    "timestamp": "2025-11-30T20:49:48.392661"
+    "timestamp": "2025-12-01T09:36:51.987327"
   },
   {
     "num_documents": 10,
@@ -141,7 +141,7 @@
     "latency": 2.4692681476866447,
     "response_tokens": 7,
     "task_type": "simple",
-    "timestamp": "2025-11-30T20:49:48.445096"
+    "timestamp": "2025-12-01T09:36:52.039859"
   },
   {
     "num_documents": 20,
@@ -157,7 +157,7 @@
     "latency": 6.649958473520849,
     "response_tokens": 7,
     "task_type": "simple",
-    "timestamp": "2025-11-30T20:49:48.498425"
+    "timestamp": "2025-12-01T09:36:52.093198"
   },
   {
     "num_documents": 20,
@@ -173,7 +173,7 @@
     "latency": 6.598756685306195,
     "response_tokens": 7,
     "task_type": "simple",
-    "timestamp": "2025-11-30T20:49:48.553758"
+    "timestamp": "2025-12-01T09:36:52.146535"
   },
   {
     "num_documents": 20,
@@ -189,7 +189,7 @@
     "latency": 6.570310098345997,
     "response_tokens": 7,
     "task_type": "simple",
-    "timestamp": "2025-11-30T20:49:48.606696"
+    "timestamp": "2025-12-01T09:36:52.200560"
   },
   {
     "num_documents": 50,
@@ -205,7 +205,7 @@
     "latency": 30.67799765973814,
     "response_tokens": 14,
     "task_type": "simple",
-    "timestamp": "2025-11-30T20:49:48.663236"
+    "timestamp": "2025-12-01T09:36:52.257963"
   },
   {
     "num_documents": 50,
@@ -221,7 +221,7 @@
     "latency": 30.458794858725742,
     "response_tokens": 7,
     "task_type": "simple",
-    "timestamp": "2025-11-30T20:49:48.721811"
+    "timestamp": "2025-12-01T09:36:52.314861"
   },
   {
     "num_documents": 50,
@@ -237,6 +237,6 @@
     "latency": 30.689576592179243,
     "response_tokens": 14,
     "task_type": "simple",
-    "timestamp": "2025-11-30T20:49:48.778842"
+    "timestamp": "2025-12-01T09:36:52.371522"
   }
 ]

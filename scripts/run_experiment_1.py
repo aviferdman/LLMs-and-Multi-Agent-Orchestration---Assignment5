@@ -11,13 +11,33 @@ import json
 from pathlib import Path
 import numpy as np
 
-# Add src to path
-sys.path.insert(0, str(Path(__file__).parent.parent / "src"))
+# Add project root to path
+sys.path.insert(0, str(Path(__file__).parent.parent))
 
-from config import ConfigManager
-from llm_interface import LLMInterface, Response
-from experiments.experiment_1 import Experiment1
+from src.config import Config
+from src.llm_interface import LLMInterface, Response
+from src.experiments.experiment_1 import Experiment1
 from loguru import logger
+
+
+def convert_numpy_types(obj):
+    """
+    Recursively convert numpy types to native Python types for JSON serialization.
+    """
+    if isinstance(obj, dict):
+        return {key: convert_numpy_types(value) for key, value in obj.items()}
+    elif isinstance(obj, list):
+        return [convert_numpy_types(item) for item in obj]
+    elif isinstance(obj, np.integer):
+        return int(obj)
+    elif isinstance(obj, np.floating):
+        return float(obj)
+    elif isinstance(obj, np.bool_):
+        return bool(obj)
+    elif isinstance(obj, np.ndarray):
+        return obj.tolist()
+    else:
+        return obj
 
 
 class MockLLMInterface(LLMInterface):
@@ -49,12 +69,38 @@ class MockLLMInterface(LLMInterface):
     def query(self, context: str, query: str, **kwargs) -> Response:
         """
         Simulate LLM query with position-based accuracy.
+        Extracts CEO name from context to determine ground truth.
         """
         self.call_count += 1
 
-        # Determine position from metadata if available
-        position = kwargs.get("position", "middle")
-        ground_truth = kwargs.get("ground_truth", "David Cohen")
+        # Extract ground truth from context by finding "The CEO of the company is X."
+        ground_truth = "Unknown"
+        if "The CEO of the company is " in context:
+            # Find the sentence with CEO information
+            start_idx = context.find("The CEO of the company is ")
+            end_idx = context.find(".", start_idx)
+            if end_idx != -1:
+                ceo_sentence = context[start_idx:end_idx+1]
+                # Extract the name (text between "is" and ".")
+                name_start = ceo_sentence.find(" is ") + 4
+                name_end = ceo_sentence.find(".", name_start)
+                ground_truth = ceo_sentence[name_start:name_end].strip()
+
+        # Determine position based on where the CEO fact appears in the context
+        # Approximate position based on character location
+        if "The CEO of the company is " in context:
+            fact_position = context.find("The CEO of the company is ")
+            context_length = len(context)
+            relative_position = fact_position / context_length
+
+            if relative_position < 0.3:
+                position = "start"
+            elif relative_position > 0.7:
+                position = "end"
+            else:
+                position = "middle"
+        else:
+            position = "middle"  # Default
 
         # Simulate latency (slightly higher for longer contexts)
         base_latency = 0.5
@@ -94,7 +140,8 @@ class MockLLMInterface(LLMInterface):
                 "model": self.model,
                 "call_count": self.call_count,
                 "position": position,
-                "simulated_correct": is_correct
+                "simulated_correct": is_correct,
+                "extracted_truth": ground_truth
             }
         )
 
@@ -115,8 +162,7 @@ def main():
     logger.info("="*70)
 
     # Load configuration
-    config_manager = ConfigManager()
-    config = config_manager.config
+    config = Config()
 
     # Override some settings for faster testing
     exp1_config = config.get("experiment_1", {})
@@ -168,10 +214,11 @@ def main():
 
     analysis_results = experiment.analyze(results)
 
-    # Save analysis
+    # Save analysis (convert numpy types first)
     analysis_file = results_dir / "processed" / "experiment_1_analysis.json"
+    analysis_results_converted = convert_numpy_types(analysis_results)
     with open(analysis_file, "w") as f:
-        json.dump(analysis_results, f, indent=2)
+        json.dump(analysis_results_converted, f, indent=2)
 
     logger.success(f"✓ Analysis saved to: {analysis_file}")
 

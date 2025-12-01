@@ -655,23 +655,23 @@ class Experiment4:
             if i < 3:
                 # Retrieval
                 query = f"What was the temperature on Day {day}?"
-                ground_truth = f"{temp}�C"
+                ground_truth = f"{temp}C"
                 action_type = "retrieval"
             elif i < 6:
                 # Synthesis
                 query = f"What has been the average temperature so far?"
                 avg_temp = sum(temperatures[:day]) / day
-                ground_truth = f"{avg_temp:.1f}�C"
+                ground_truth = f"{avg_temp:.1f}C"
                 action_type = "synthesis"
             elif i < 8:
                 # Comparison
                 if day > 3:
                     query = f"How does today's temperature compare to Day {day-3}?"
                     diff = temp - temperatures[day-4]
-                    ground_truth = f"{abs(diff)}�C {'higher' if diff > 0 else 'lower'}"
+                    ground_truth = f"{abs(diff)}C {'higher' if diff > 0 else 'lower'}"
                 else:
                     query = f"What was the temperature on Day {day}?"
-                    ground_truth = f"{temp}�C"
+                    ground_truth = f"{temp}C"
                 action_type = "comparison"
             else:
                 # Reasoning
@@ -825,8 +825,24 @@ class Experiment4:
         Returns:
             Accuracy score (0 or 1, or semantic similarity)
         """
+        import re
+
+        # Normalize text: strip, lowercase, remove punctuation
+        def normalize(text: str) -> str:
+            text = text.strip().lower()
+            text = re.sub(r'[^\w\s]', ' ', text)
+            text = re.sub(r'\s+', ' ', text)
+            return text.strip()
+
+        answer_norm = normalize(answer)
+        gt_norm = normalize(ground_truth)
+
         # Simple exact match
-        if answer.strip().lower() == ground_truth.strip().lower():
+        if answer_norm == gt_norm:
+            return 1.0
+
+        # Check if ground truth is contained in answer (for short answers)
+        if gt_norm in answer_norm:
             return 1.0
 
         # Semantic similarity

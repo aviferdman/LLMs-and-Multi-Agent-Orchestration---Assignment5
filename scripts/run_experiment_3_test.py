@@ -47,16 +47,34 @@ class MockLLMInterface(LLMInterface):
         # Simple mock answer generation
         if "what was mentioned" in query.lower() or "what is" in query.lower():
             # Factual query - try to extract from context
+            # Extract the sector being asked about
+            sector = None
+            for s in ["technology", "healthcare", "finance", "education", "environment",
+                     "energy", "transportation", "agriculture", "manufacturing", "retail"]:
+                if s in query.lower():
+                    sector = s
+                    break
+
+            # Look for sector-specific information in context
             words = context.split()
-            # Look for percentage patterns or numbers
+            answer = None
+
+            # Look for patterns: "X% in 2024", "X students", "X%"
             for i, word in enumerate(words):
-                if '%' in word or word.endswith('%'):
-                    answer = f"The value mentioned is {word}"
-                    break
-                elif word.isdigit() and i < len(words) - 1 and 'students' in words[i+1]:
-                    answer = f"The number is {word} students"
-                    break
-            else:
+                # Check for "students" pattern
+                if i > 0 and 'students' in word.lower():
+                    prev_word = words[i-1]
+                    if prev_word.isdigit():
+                        answer = f"The number is {prev_word} students"
+                        break
+                # Check for percentage patterns
+                elif '%' in word:
+                    # Extract just the percentage
+                    percentage = word.strip('.,;:')
+                    answer = f"The value mentioned is {percentage}"
+                    # Don't break - keep looking for more specific matches
+
+            if not answer:
                 answer = "The specific metric showed improvement in the sector."
         else:
             # Analytical query

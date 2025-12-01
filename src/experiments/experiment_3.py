@@ -192,26 +192,58 @@ class CorpusManager:
 
     def _generate_fact(self, topic: str, idx: int) -> Dict[str, Any]:
         """Generate a fact for a specific topic."""
+        # Generate values once and reuse them for all 10 topics
+        tech_value = random.randint(20, 80)
+        health_value = random.randint(70, 95)
+        finance_value = random.randint(5, 25)
+        edu_value = random.randint(10, 40)
+        env_value = random.randint(15, 50)
+        energy_value = random.randint(25, 75)
+        transport_value = random.randint(30, 85)
+        agri_value = random.randint(10, 50)
+        mfg_value = random.randint(15, 60)
+        retail_value = random.randint(20, 70)
+
         fact_types = {
             "technology": {
-                "statement": f"the adoption rate increased by {random.randint(20, 80)}% in 2024",
-                "answer": f"{random.randint(20, 80)}%"
+                "statement": f"the adoption rate increased by {tech_value}% in 2024",
+                "answer": f"{tech_value}%"
             },
             "healthcare": {
-                "statement": f"patient satisfaction scores reached {random.randint(70, 95)}%",
-                "answer": f"{random.randint(70, 95)}%"
+                "statement": f"patient satisfaction scores reached {health_value}%",
+                "answer": f"{health_value}%"
             },
             "finance": {
-                "statement": f"the quarterly growth was {random.randint(5, 25)}%",
-                "answer": f"{random.randint(5, 25)}%"
+                "statement": f"the quarterly growth was {finance_value}%",
+                "answer": f"{finance_value}%"
             },
             "education": {
-                "statement": f"enrollment increased by {random.randint(10, 40)} students",
-                "answer": f"{random.randint(10, 40)} students"
+                "statement": f"enrollment increased by {edu_value} students",
+                "answer": f"{edu_value} students"
             },
             "environment": {
-                "statement": f"emissions decreased by {random.randint(15, 50)}%",
-                "answer": f"{random.randint(15, 50)}%"
+                "statement": f"emissions decreased by {env_value}%",
+                "answer": f"{env_value}%"
+            },
+            "energy": {
+                "statement": f"renewable energy capacity grew by {energy_value}%",
+                "answer": f"{energy_value}%"
+            },
+            "transportation": {
+                "statement": f"ridership increased by {transport_value}%",
+                "answer": f"{transport_value}%"
+            },
+            "agriculture": {
+                "statement": f"crop yield improved by {agri_value}%",
+                "answer": f"{agri_value}%"
+            },
+            "manufacturing": {
+                "statement": f"production efficiency rose by {mfg_value}%",
+                "answer": f"{mfg_value}%"
+            },
+            "retail": {
+                "statement": f"sales volume increased by {retail_value}%",
+                "answer": f"{retail_value}%"
             }
         }
 
