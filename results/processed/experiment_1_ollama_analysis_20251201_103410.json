@@ -1,0 +1,50 @@
+{
+  "anova": {
+    "f_statistic": NaN,
+    "p_value": NaN,
+    "eta_squared": 0,
+    "significant": false,
+    "num_groups": 3
+  },
+  "pairwise": {
+    "start_vs_middle": {
+      "t_statistic": NaN,
+      "p_value": NaN,
+      "cohens_d": 0.0,
+      "significant": false,
+      "paired": false
+    },
+    "start_vs_end": {
+      "t_statistic": NaN,
+      "p_value": NaN,
+      "cohens_d": 0.0,
+      "significant": false,
+      "paired": false
+    },
+    "middle_vs_end": {
+      "t_statistic": NaN,
+      "p_value": NaN,
+      "cohens_d": 0.0,
+      "significant": false,
+      "paired": false
+    }
+  },
+  "confidence_intervals": {
+    "start": {
+      "lower": 1.0,
+      "upper": 1.0,
+      "mean": 1.0
+    },
+    "middle": {
+      "lower": 1.0,
+      "upper": 1.0,
+      "mean": 1.0
+    },
+    "end": {
+      "lower": 1.0,
+      "upper": 1.0,
+      "mean": 1.0
+    }
+  },
+  "effect_size_interpretation": "negligible"
+}

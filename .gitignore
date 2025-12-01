@@ -53,15 +53,8 @@ data/corpora/synthetic/*
 !data/corpora/synthetic/.gitkeep
 data/chroma_db/
 
-# Results (exclude but keep structure)
-results/raw/*
-!results/raw/.gitkeep
-results/processed/*
-!results/processed/.gitkeep
-results/figures/*
-!results/figures/.gitkeep
-results/reports/*
-!results/reports/.gitkeep
+# Results - INCLUDED IN REPOSITORY FOR REPRODUCIBILITY
+# All experiment results, figures, and reports are tracked in git
 
 # Testing
 .pytest_cache/

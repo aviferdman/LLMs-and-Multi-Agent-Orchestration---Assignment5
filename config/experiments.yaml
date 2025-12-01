@@ -4,7 +4,7 @@
 general:
   random_seed: 42
   num_runs: 3
-  ollama_model: "llama2:13b"
+  ollama_model: "llama2:latest"
   output_dir: "results/"
   log_level: "INFO"
 

@@ -1,0 +1,1608 @@
+{
+  "experiment": "experiment_1",
+  "name": "Lost in the Middle",
+  "timestamp": "2025-12-01T10:34:10.698091",
+  "duration_seconds": 802.555401802063,
+  "configuration": {
+    "num_documents": 5,
+    "words_per_document": 200,
+    "fact_positions": [
+      "start",
+      "middle",
+      "end"
+    ],
+    "num_trials_per_position": 30,
+    "random_seed": 42
+  },
+  "trials": [
+    {
+      "position": "start",
+      "query": "What is the CEO's name?",
+      "response": "Based on the context provided in Documents 1-5, the CEO's name is Michael Brown.",
+      "ground_truth": "Michael Brown",
+      "correct": true,
+      "latency": 23.110844612121582,
+      "tokens": 25,
+      "semantic_similarity": 0.07142857142857142,
+      "metadata": {
+        "fact": "The CEO of the company is Michael Brown.",
+        "fact_type": "ceo_name",
+        "document_length": 1061,
+        "timestamp": "2025-12-01T10:21:11.259792"
+      }
+    },
+    {
+      "position": "start",
+      "query": "What is the CEO's name?",
+      "response": "Based on the context provided in Documents 1-5, the CEO of the company is Michael Brown.",
+      "ground_truth": "Michael Brown",
+      "correct": true,
+      "latency": 10.38971996307373,
+      "tokens": 25,
+      "semantic_similarity": 0.06666666666666667,
+      "metadata": {
+        "fact": "The CEO of the company is Michael Brown.",
+        "fact_type": "ceo_name",
+        "document_length": 1012,
+        "timestamp": "2025-12-01T10:21:21.655603"
+      }
+    },
+    {
+      "position": "start",
+      "query": "What is the CEO's name?",
+      "response": "Based on the context provided in Documents 1-5, the CEO's name is David Cohen.",
+      "ground_truth": "David Cohen",
+      "correct": true,
+      "latency": 9.378765344619751,
+      "tokens": 26,
+      "semantic_similarity": 0.07142857142857142,
+      "metadata": {
+        "fact": "The CEO of the company is David Cohen.",
+        "fact_type": "ceo_name",
+        "document_length": 1010,
+        "timestamp": "2025-12-01T10:21:31.037800"
+      }
+    },
+    {
+      "position": "start",
+      "query": "What is the CEO's name?",
+      "response": "Based on the context provided in Documents 1-5, the CEO of the company is Michael Brown.",
+      "ground_truth": "Michael Brown",
+      "correct": true,
+      "latency": 9.746443271636963,
+      "tokens": 25,
+      "semantic_similarity": 0.06666666666666667,
+      "metadata": {
+        "fact": "The CEO of the company is Michael Brown.",
+        "fact_type": "ceo_name",
+        "document_length": 1011,
+        "timestamp": "2025-12-01T10:21:40.787473"
+      }
+    },
+    {
+      "position": "start",
+      "query": "What is the CEO's name?",
+      "response": "Based on the context provided in Documents 1-5, the CEO of the company is Sarah Williams.",
+      "ground_truth": "Sarah Williams",
+      "correct": true,
+      "latency": 9.169687271118164,
+      "tokens": 25,
+      "semantic_similarity": 0.06666666666666667,
+      "metadata": {
+        "fact": "The CEO of the company is Sarah Williams.",
+        "fact_type": "ceo_name",
+        "document_length": 1036,
+        "timestamp": "2025-12-01T10:21:49.959902"
+      }
+    },
+    {
+      "position": "start",
+      "query": "What is the CEO's name?",
+      "response": "Based on the context provided in Documents 1-5, the CEO's name is Michael Brown.",
+      "ground_truth": "Michael Brown",
+      "correct": true,
+      "latency": 9.699434518814087,
+      "tokens": 25,
+      "semantic_similarity": 0.07142857142857142,
+      "metadata": {
+        "fact": "The CEO of the company is Michael Brown.",
+        "fact_type": "ceo_name",
+        "document_length": 1100,
+        "timestamp": "2025-12-01T10:21:59.662459"
+      }
+    },
+    {
+      "position": "start",
+      "query": "What is the CEO's name?",
+      "response": "Based on the context provided in Documents 1-5, the CEO of the company is Sarah Williams.",
+      "ground_truth": "Sarah Williams",
+      "correct": true,
+      "latency": 8.98922348022461,
+      "tokens": 25,
+      "semantic_similarity": 0.06666666666666667,
+      "metadata": {
+        "fact": "The CEO of the company is Sarah Williams.",
+        "fact_type": "ceo_name",
+        "document_length": 995,
+        "timestamp": "2025-12-01T10:22:08.658579"
+      }
+    },
+    {
+      "position": "start",
+      "query": "What is the CEO's name?",
+      "response": "Based on the context provided in Documents 1-5, the CEO's name is Michael Brown.",
+      "ground_truth": "Michael Brown",
+      "correct": true,
+      "latency": 8.974104404449463,
+      "tokens": 25,
+      "semantic_similarity": 0.07142857142857142,
+      "metadata": {
+        "fact": "The CEO of the company is Michael Brown.",
+        "fact_type": "ceo_name",
+        "document_length": 1013,
+        "timestamp": "2025-12-01T10:22:17.638712"
+      }
+    },
+    {
+      "position": "start",
+      "query": "What is the CEO's name?",
+      "response": "Based on the context provided in Documents 1-5, the CEO of the company is Michael Brown.",
+      "ground_truth": "Michael Brown",
+      "correct": true,
+      "latency": 8.98488473892212,
+      "tokens": 25,
+      "semantic_similarity": 0.06666666666666667,
+      "metadata": {
+        "fact": "The CEO of the company is Michael Brown.",
+        "fact_type": "ceo_name",
+        "document_length": 1046,
+        "timestamp": "2025-12-01T10:22:26.624217"
+      }
+    },
+    {
+      "position": "start",
+      "query": "What is the CEO's name?",
+      "response": "Based on the context provided in Documents 1-5, the CEO's name is David Cohen.",
+      "ground_truth": "David Cohen",
+      "correct": true,
+      "latency": 8.568166971206665,
+      "tokens": 26,
+      "semantic_similarity": 0.07142857142857142,
+      "metadata": {
+        "fact": "The CEO of the company is David Cohen.",
+        "fact_type": "ceo_name",
+        "document_length": 1021,
+        "timestamp": "2025-12-01T10:22:35.197725"
+      }
+    },
+    {
+      "position": "start",
+      "query": "What is the CEO's name?",
+      "response": "Based on the context provided in Documents 1-5, the CEO's name is Michael Brown.",
+      "ground_truth": "Michael Brown",
+      "correct": true,
+      "latency": 8.28684949874878,
+      "tokens": 25,
+      "semantic_similarity": 0.07142857142857142,
+      "metadata": {
+        "fact": "The CEO of the company is Michael Brown.",
+        "fact_type": "ceo_name",
+        "document_length": 1027,
+        "timestamp": "2025-12-01T10:22:43.489500"
+      }
+    },
+    {
+      "position": "start",
+      "query": "What is the CEO's name?",
+      "response": "Based on the context provided in Documents 1-5, the CEO of the company is Michael Brown.",
+      "ground_truth": "Michael Brown",
+      "correct": true,
+      "latency": 9.467862367630005,
+      "tokens": 25,
+      "semantic_similarity": 0.06666666666666667,
+      "metadata": {
+        "fact": "The CEO of the company is Michael Brown.",
+        "fact_type": "ceo_name",
+        "document_length": 1083,
+        "timestamp": "2025-12-01T10:22:52.959154"
+      }
+    },
+    {
+      "position": "start",
+      "query": "What is the CEO's name?",
+      "response": "Based on the context provided in Documents 1-5, the CEO's name is Sarah Williams.",
+      "ground_truth": "Sarah Williams",
+      "correct": true,
+      "latency": 9.169556379318237,
+      "tokens": 25,
+      "semantic_similarity": 0.07142857142857142,
+      "metadata": {
+        "fact": "The CEO of the company is Sarah Williams.",
+        "fact_type": "ceo_name",
+        "document_length": 1063,
+        "timestamp": "2025-12-01T10:23:02.130649"
+      }
+    },
+    {
+      "position": "start",
+      "query": "What is the CEO's name?",
+      "response": "Based on the context provided in Documents 1-5, the CEO's name is David Cohen.",
+      "ground_truth": "David Cohen",
+      "correct": true,
+      "latency": 9.359910249710083,
+      "tokens": 26,
+      "semantic_similarity": 0.07142857142857142,
+      "metadata": {
+        "fact": "The CEO of the company is David Cohen.",
+        "fact_type": "ceo_name",
+        "document_length": 1056,
+        "timestamp": "2025-12-01T10:23:11.495599"
+      }
+    },
+    {
+      "position": "start",
+      "query": "What is the CEO's name?",
+      "response": "Based on the context provided in Documents 1-5, the CEO's name is Michael Brown.",
+      "ground_truth": "Michael Brown",
+      "correct": true,
+      "latency": 9.649808883666992,
+      "tokens": 25,
+      "semantic_similarity": 0.07142857142857142,
+      "metadata": {
+        "fact": "The CEO of the company is Michael Brown.",
+        "fact_type": "ceo_name",
+        "document_length": 1047,
+        "timestamp": "2025-12-01T10:23:21.150352"
+      }
+    },
+    {
+      "position": "start",
+      "query": "What is the CEO's name?",
+      "response": "Based on the context provided in Documents 1-5, the CEO's name is Michael Brown.",
+      "ground_truth": "Michael Brown",
+      "correct": true,
+      "latency": 9.325770139694214,
+      "tokens": 25,
+      "semantic_similarity": 0.07142857142857142,
+      "metadata": {
+        "fact": "The CEO of the company is Michael Brown.",
+        "fact_type": "ceo_name",
+        "document_length": 1043,
+        "timestamp": "2025-12-01T10:23:30.481604"
+      }
+    },
+    {
+      "position": "start",
+      "query": "What is the CEO's name?",
+      "response": "Based on the context provided in Documents 1-5, the CEO's name is Michael Brown.",
+      "ground_truth": "Michael Brown",
+      "correct": true,
+      "latency": 9.683381080627441,
+      "tokens": 25,
+      "semantic_similarity": 0.07142857142857142,
+      "metadata": {
+        "fact": "The CEO of the company is Michael Brown.",
+        "fact_type": "ceo_name",
+        "document_length": 1011,
+        "timestamp": "2025-12-01T10:23:40.167174"
+      }
+    },
+    {
+      "position": "start",
+      "query": "What is the CEO's name?",
+      "response": "Based on the context provided in Documents 1-5, the CEO's name is David Cohen.",
+      "ground_truth": "David Cohen",
+      "correct": true,
+      "latency": 8.889871597290039,
+      "tokens": 26,
+      "semantic_similarity": 0.07142857142857142,
+      "metadata": {
+        "fact": "The CEO of the company is David Cohen.",
+        "fact_type": "ceo_name",
+        "document_length": 1024,
+        "timestamp": "2025-12-01T10:23:49.059314"
+      }
+    },
+    {
+      "position": "start",
+      "query": "What is the CEO's name?",
+      "response": "Based on the context provided in Documents 1-5, the CEO of the company is Michael Brown.",
+      "ground_truth": "Michael Brown",
+      "correct": true,
+      "latency": 9.136012315750122,
+      "tokens": 25,
+      "semantic_similarity": 0.06666666666666667,
+      "metadata": {
+        "fact": "The CEO of the company is Michael Brown.",
+        "fact_type": "ceo_name",
+        "document_length": 1023,
+        "timestamp": "2025-12-01T10:23:58.202383"
+      }
+    },
+    {
+      "position": "start",
+      "query": "What is the CEO's name?",
+      "response": "Based on the context provided in Documents 1-5, the CEO of the company is Sarah Williams.",
+      "ground_truth": "Sarah Williams",
+      "correct": true,
+      "latency": 9.212909698486328,
+      "tokens": 25,
+      "semantic_similarity": 0.06666666666666667,
+      "metadata": {
+        "fact": "The CEO of the company is Sarah Williams.",
+        "fact_type": "ceo_name",
+        "document_length": 1080,
+        "timestamp": "2025-12-01T10:24:07.419213"
+      }
+    },
+    {
+      "position": "start",
+      "query": "What is the CEO's name?",
+      "response": "Based on the context provided in Documents 1-5, the CEO's name is David Cohen.",
+      "ground_truth": "David Cohen",
+      "correct": true,
+      "latency": 10.215893983840942,
+      "tokens": 26,
+      "semantic_similarity": 0.07142857142857142,
+      "metadata": {
+        "fact": "The CEO of the company is David Cohen.",
+        "fact_type": "ceo_name",
+        "document_length": 1061,
+        "timestamp": "2025-12-01T10:24:17.639620"
+      }
+    },
+    {
+      "position": "start",
+      "query": "What is the CEO's name?",
+      "response": "Based on the context provided in Documents 1-5, the CEO of the company is Sarah Williams.",
+      "ground_truth": "Sarah Williams",
+      "correct": true,
+      "latency": 9.681975603103638,
+      "tokens": 25,
+      "semantic_similarity": 0.06666666666666667,
+      "metadata": {
+        "fact": "The CEO of the company is Sarah Williams.",
+        "fact_type": "ceo_name",
+        "document_length": 1060,
+        "timestamp": "2025-12-01T10:24:27.326946"
+      }
+    },
+    {
+      "position": "start",
+      "query": "What is the CEO's name?",
+      "response": "Based on the context provided in Documents 1-5, the CEO of the company is Michael Brown.",
+      "ground_truth": "Michael Brown",
+      "correct": true,
+      "latency": 10.188960790634155,
+      "tokens": 25,
+      "semantic_similarity": 0.06666666666666667,
+      "metadata": {
+        "fact": "The CEO of the company is Michael Brown.",
+        "fact_type": "ceo_name",
+        "document_length": 996,
+        "timestamp": "2025-12-01T10:24:37.522615"
+      }
+    },
+    {
+      "position": "start",
+      "query": "What is the CEO's name?",
+      "response": "Based on the context provided in Documents 1-5, the CEO of the company is Michael Brown.",
+      "ground_truth": "Michael Brown",
+      "correct": true,
+      "latency": 8.9033203125,
+      "tokens": 25,
+      "semantic_similarity": 0.06666666666666667,
+      "metadata": {
+        "fact": "The CEO of the company is Michael Brown.",
+        "fact_type": "ceo_name",
+        "document_length": 1067,
+        "timestamp": "2025-12-01T10:24:46.429406"
+      }
+    },
+    {
+      "position": "start",
+      "query": "What is the CEO's name?",
+      "response": "Based on the context provided in Documents 1-5, the CEO of the company is Sarah Williams.",
+      "ground_truth": "Sarah Williams",
+      "correct": true,
+      "latency": 8.862159013748169,
+      "tokens": 25,
+      "semantic_similarity": 0.06666666666666667,
+      "metadata": {
+        "fact": "The CEO of the company is Sarah Williams.",
+        "fact_type": "ceo_name",
+        "document_length": 1045,
+        "timestamp": "2025-12-01T10:24:55.296284"
+      }
+    },
+    {
+      "position": "start",
+      "query": "What is the CEO's name?",
+      "response": "Based on the context provided in Documents 1-5, the CEO of the company is Sarah Williams.",
+      "ground_truth": "Sarah Williams",
+      "correct": true,
+      "latency": 8.734631776809692,
+      "tokens": 25,
+      "semantic_similarity": 0.06666666666666667,
+      "metadata": {
+        "fact": "The CEO of the company is Sarah Williams.",
+        "fact_type": "ceo_name",
+        "document_length": 1043,
+        "timestamp": "2025-12-01T10:25:04.031936"
+      }
+    },
+    {
+      "position": "start",
+      "query": "What is the CEO's name?",
+      "response": "Based on the context provided in Documents 1-5, the CEO of the company is David Cohen.",
+      "ground_truth": "David Cohen",
+      "correct": true,
+      "latency": 8.971660375595093,
+      "tokens": 26,
+      "semantic_similarity": 0.06666666666666667,
+      "metadata": {
+        "fact": "The CEO of the company is David Cohen.",
+        "fact_type": "ceo_name",
+        "document_length": 983,
+        "timestamp": "2025-12-01T10:25:13.010586"
+      }
+    },
+    {
+      "position": "start",
+      "query": "What is the CEO's name?",
+      "response": "Based on the context provided in Documents 1-5, the CEO's name is Michael Brown.",
+      "ground_truth": "Michael Brown",
+      "correct": true,
+      "latency": 9.540968894958496,
+      "tokens": 25,
+      "semantic_similarity": 0.07142857142857142,
+      "metadata": {
+        "fact": "The CEO of the company is Michael Brown.",
+        "fact_type": "ceo_name",
+        "document_length": 1016,
+        "timestamp": "2025-12-01T10:25:22.559721"
+      }
+    },
+    {
+      "position": "start",
+      "query": "What is the CEO's name?",
+      "response": "Based on the context provided in Documents 1-5, the CEO's name is David Cohen.",
+      "ground_truth": "David Cohen",
+      "correct": true,
+      "latency": 9.230316400527954,
+      "tokens": 26,
+      "semantic_similarity": 0.07142857142857142,
+      "metadata": {
+        "fact": "The CEO of the company is David Cohen.",
+        "fact_type": "ceo_name",
+        "document_length": 1012,
+        "timestamp": "2025-12-01T10:25:31.796964"
+      }
+    },
+    {
+      "position": "start",
+      "query": "What is the CEO's name?",
+      "response": "Based on the context provided in Documents 1-5, the CEO of the company is David Cohen.",
+      "ground_truth": "David Cohen",
+      "correct": true,
+      "latency": 8.999913692474365,
+      "tokens": 26,
+      "semantic_similarity": 0.06666666666666667,
+      "metadata": {
+        "fact": "The CEO of the company is David Cohen.",
+        "fact_type": "ceo_name",
+        "document_length": 1018,
+        "timestamp": "2025-12-01T10:25:40.797487"
+      }
+    },
+    {
+      "position": "middle",
+      "query": "What is the CEO's name?",
+      "response": "Based on the context provided in Documents 1-5, the CEO of the company is David Cohen.",
+      "ground_truth": "David Cohen",
+      "correct": true,
+      "latency": 9.369720697402954,
+      "tokens": 26,
+      "semantic_similarity": 0.06666666666666667,
+      "metadata": {
+        "fact": "The CEO of the company is David Cohen.",
+        "fact_type": "ceo_name",
+        "document_length": 1038,
+        "timestamp": "2025-12-01T10:25:50.169262"
+      }
+    },
+    {
+      "position": "middle",
+      "query": "What is the CEO's name?",
+      "response": "Based on the context provided in Documents 1-5, the CEO's name is Michael Brown.",
+      "ground_truth": "Michael Brown",
+      "correct": true,
+      "latency": 9.463706970214844,
+      "tokens": 25,
+      "semantic_similarity": 0.07142857142857142,
+      "metadata": {
+        "fact": "The CEO of the company is Michael Brown.",
+        "fact_type": "ceo_name",
+        "document_length": 981,
+        "timestamp": "2025-12-01T10:25:59.636357"
+      }
+    },
+    {
+      "position": "middle",
+      "query": "What is the CEO's name?",
+      "response": "Based on the context provided in Documents 1-5, the CEO of the company is Michael Brown.",
+      "ground_truth": "Michael Brown",
+      "correct": true,
+      "latency": 9.899749040603638,
+      "tokens": 25,
+      "semantic_similarity": 0.06666666666666667,
+      "metadata": {
+        "fact": "The CEO of the company is Michael Brown.",
+        "fact_type": "ceo_name",
+        "document_length": 1059,
+        "timestamp": "2025-12-01T10:26:09.537359"
+      }
+    },
+    {
+      "position": "middle",
+      "query": "What is the CEO's name?",
+      "response": "Based on the context provided in Documents 1-5, the CEO of the company is David Cohen.",
+      "ground_truth": "David Cohen",
+      "correct": true,
+      "latency": 10.553422689437866,
+      "tokens": 26,
+      "semantic_similarity": 0.06666666666666667,
+      "metadata": {
+        "fact": "The CEO of the company is David Cohen.",
+        "fact_type": "ceo_name",
+        "document_length": 1007,
+        "timestamp": "2025-12-01T10:26:20.097799"
+      }
+    },
+    {
+      "position": "middle",
+      "query": "What is the CEO's name?",
+      "response": "Based on the context provided in Documents 1-5, the CEO of the company is David Cohen.",
+      "ground_truth": "David Cohen",
+      "correct": true,
+      "latency": 11.312159538269043,
+      "tokens": 26,
+      "semantic_similarity": 0.06666666666666667,
+      "metadata": {
+        "fact": "The CEO of the company is David Cohen.",
+        "fact_type": "ceo_name",
+        "document_length": 1028,
+        "timestamp": "2025-12-01T10:26:31.410991"
+      }
+    },
+    {
+      "position": "middle",
+      "query": "What is the CEO's name?",
+      "response": "Based on the context provided in Documents 1-5, the CEO of the company is Michael Brown.",
+      "ground_truth": "Michael Brown",
+      "correct": true,
+      "latency": 9.85730504989624,
+      "tokens": 25,
+      "semantic_similarity": 0.06666666666666667,
+      "metadata": {
+        "fact": "The CEO of the company is Michael Brown.",
+        "fact_type": "ceo_name",
+        "document_length": 1072,
+        "timestamp": "2025-12-01T10:26:41.271048"
+      }
+    },
+    {
+      "position": "middle",
+      "query": "What is the CEO's name?",
+      "response": "Based on the context provided in Documents 1-5, the CEO of the company is Michael Brown.",
+      "ground_truth": "Michael Brown",
+      "correct": true,
+      "latency": 9.509187459945679,
+      "tokens": 25,
+      "semantic_similarity": 0.06666666666666667,
+      "metadata": {
+        "fact": "The CEO of the company is Michael Brown.",
+        "fact_type": "ceo_name",
+        "document_length": 1045,
+        "timestamp": "2025-12-01T10:26:50.781808"
+      }
+    },
+    {
+      "position": "middle",
+      "query": "What is the CEO's name?",
+      "response": "Based on the context provided in Documents 1-5, the CEO's name is Michael Brown.",
+      "ground_truth": "Michael Brown",
+      "correct": true,
+      "latency": 8.58189058303833,
+      "tokens": 25,
+      "semantic_similarity": 0.07142857142857142,
+      "metadata": {
+        "fact": "The CEO of the company is Michael Brown.",
+        "fact_type": "ceo_name",
+        "document_length": 1036,
+        "timestamp": "2025-12-01T10:26:59.368346"
+      }
+    },
+    {
+      "position": "middle",
+      "query": "What is the CEO's name?",
+      "response": "Based on the context provided in Documents 1-5, the CEO of the company is Michael Brown.",
+      "ground_truth": "Michael Brown",
+      "correct": true,
+      "latency": 8.47499394416809,
+      "tokens": 25,
+      "semantic_similarity": 0.06666666666666667,
+      "metadata": {
+        "fact": "The CEO of the company is Michael Brown.",
+        "fact_type": "ceo_name",
+        "document_length": 1040,
+        "timestamp": "2025-12-01T10:27:07.846039"
+      }
+    },
+    {
+      "position": "middle",
+      "query": "What is the CEO's name?",
+      "response": "Based on the context provided in Documents 1 to 5, the CEO's name is David Cohen.",
+      "ground_truth": "David Cohen",
+      "correct": true,
+      "latency": 8.584115743637085,
+      "tokens": 27,
+      "semantic_similarity": 0.0625,
+      "metadata": {
+        "fact": "The CEO of the company is David Cohen.",
+        "fact_type": "ceo_name",
+        "document_length": 1076,
+        "timestamp": "2025-12-01T10:27:16.434854"
+      }
+    },
+    {
+      "position": "middle",
+      "query": "What is the CEO's name?",
+      "response": "Based on the context provided in Documents 1-5, the CEO of the company is Michael Brown.",
+      "ground_truth": "Michael Brown",
+      "correct": true,
+      "latency": 8.24428129196167,
+      "tokens": 25,
+      "semantic_similarity": 0.06666666666666667,
+      "metadata": {
+        "fact": "The CEO of the company is Michael Brown.",
+        "fact_type": "ceo_name",
+        "document_length": 1053,
+        "timestamp": "2025-12-01T10:27:24.682052"
+      }
+    },
+    {
+      "position": "middle",
+      "query": "What is the CEO's name?",
+      "response": "Based on the context provided in Documents 1-5, the CEO's name is David Cohen.",
+      "ground_truth": "David Cohen",
+      "correct": true,
+      "latency": 8.31104850769043,
+      "tokens": 26,
+      "semantic_similarity": 0.07142857142857142,
+      "metadata": {
+        "fact": "The CEO of the company is David Cohen.",
+        "fact_type": "ceo_name",
+        "document_length": 1050,
+        "timestamp": "2025-12-01T10:27:32.999394"
+      }
+    },
+    {
+      "position": "middle",
+      "query": "What is the CEO's name?",
+      "response": "Based on the context provided in Documents 1-5, the CEO of the company is Michael Brown.",
+      "ground_truth": "Michael Brown",
+      "correct": true,
+      "latency": 8.238675594329834,
+      "tokens": 25,
+      "semantic_similarity": 0.06666666666666667,
+      "metadata": {
+        "fact": "The CEO of the company is Michael Brown.",
+        "fact_type": "ceo_name",
+        "document_length": 1036,
+        "timestamp": "2025-12-01T10:27:41.239636"
+      }
+    },
+    {
+      "position": "middle",
+      "query": "What is the CEO's name?",
+      "response": "Based on the context provided in Documents 1-5, the CEO of the company is David Cohen.",
+      "ground_truth": "David Cohen",
+      "correct": true,
+      "latency": 8.325969934463501,
+      "tokens": 26,
+      "semantic_similarity": 0.06666666666666667,
+      "metadata": {
+        "fact": "The CEO of the company is David Cohen.",
+        "fact_type": "ceo_name",
+        "document_length": 1055,
+        "timestamp": "2025-12-01T10:27:49.572337"
+      }
+    },
+    {
+      "position": "middle",
+      "query": "What is the CEO's name?",
+      "response": "Based on the context provided in Documents 1-5, the CEO of the company is Michael Brown.",
+      "ground_truth": "Michael Brown",
+      "correct": true,
+      "latency": 8.468289375305176,
+      "tokens": 25,
+      "semantic_similarity": 0.06666666666666667,
+      "metadata": {
+        "fact": "The CEO of the company is Michael Brown.",
+        "fact_type": "ceo_name",
+        "document_length": 1074,
+        "timestamp": "2025-12-01T10:27:58.042740"
+      }
+    },
+    {
+      "position": "middle",
+      "query": "What is the CEO's name?",
+      "response": "Based on the context provided in Documents 1-5, the CEO of the company is David Cohen.",
+      "ground_truth": "David Cohen",
+      "correct": true,
+      "latency": 8.09545373916626,
+      "tokens": 26,
+      "semantic_similarity": 0.06666666666666667,
+      "metadata": {
+        "fact": "The CEO of the company is David Cohen.",
+        "fact_type": "ceo_name",
+        "document_length": 1030,
+        "timestamp": "2025-12-01T10:28:06.144922"
+      }
+    },
+    {
+      "position": "middle",
+      "query": "What is the CEO's name?",
+      "response": "Based on the context provided in Documents 1-5, the CEO's name is Sarah Williams.",
+      "ground_truth": "Sarah Williams",
+      "correct": true,
+      "latency": 8.043217182159424,
+      "tokens": 25,
+      "semantic_similarity": 0.07142857142857142,
+      "metadata": {
+        "fact": "The CEO of the company is Sarah Williams.",
+        "fact_type": "ceo_name",
+        "document_length": 1019,
+        "timestamp": "2025-12-01T10:28:14.193832"
+      }
+    },
+    {
+      "position": "middle",
+      "query": "What is the CEO's name?",
+      "response": "Based on the context provided in Documents 1-5, the CEO of the company is Sarah Williams.",
+      "ground_truth": "Sarah Williams",
+      "correct": true,
+      "latency": 8.030419826507568,
+      "tokens": 25,
+      "semantic_similarity": 0.06666666666666667,
+      "metadata": {
+        "fact": "The CEO of the company is Sarah Williams.",
+        "fact_type": "ceo_name",
+        "document_length": 995,
+        "timestamp": "2025-12-01T10:28:22.227033"
+      }
+    },
+    {
+      "position": "middle",
+      "query": "What is the CEO's name?",
+      "response": "Based on the context provided in Documents 1-5, the CEO of the company is Michael Brown.",
+      "ground_truth": "Michael Brown",
+      "correct": true,
+      "latency": 7.93537163734436,
+      "tokens": 25,
+      "semantic_similarity": 0.06666666666666667,
+      "metadata": {
+        "fact": "The CEO of the company is Michael Brown.",
+        "fact_type": "ceo_name",
+        "document_length": 992,
+        "timestamp": "2025-12-01T10:28:30.168887"
+      }
+    },
+    {
+      "position": "middle",
+      "query": "What is the CEO's name?",
+      "response": "Based on the context provided in Documents 1-5, the CEO of the company is Sarah Williams.",
+      "ground_truth": "Sarah Williams",
+      "correct": true,
+      "latency": 8.309123516082764,
+      "tokens": 25,
+      "semantic_similarity": 0.06666666666666667,
+      "metadata": {
+        "fact": "The CEO of the company is Sarah Williams.",
+        "fact_type": "ceo_name",
+        "document_length": 1053,
+        "timestamp": "2025-12-01T10:28:38.481950"
+      }
+    },
+    {
+      "position": "middle",
+      "query": "What is the CEO's name?",
+      "response": "Based on the context provided in Documents 1-5, the CEO of the company is David Cohen.",
+      "ground_truth": "David Cohen",
+      "correct": true,
+      "latency": 7.975343227386475,
+      "tokens": 26,
+      "semantic_similarity": 0.06666666666666667,
+      "metadata": {
+        "fact": "The CEO of the company is David Cohen.",
+        "fact_type": "ceo_name",
+        "document_length": 1030,
+        "timestamp": "2025-12-01T10:28:46.463987"
+      }
+    },
+    {
+      "position": "middle",
+      "query": "What is the CEO's name?",
+      "response": "Based on the context provided in Documents 1-5, the CEO of the company is David Cohen.",
+      "ground_truth": "David Cohen",
+      "correct": true,
+      "latency": 8.597716331481934,
+      "tokens": 26,
+      "semantic_similarity": 0.06666666666666667,
+      "metadata": {
+        "fact": "The CEO of the company is David Cohen.",
+        "fact_type": "ceo_name",
+        "document_length": 1087,
+        "timestamp": "2025-12-01T10:28:55.069605"
+      }
+    },
+    {
+      "position": "middle",
+      "query": "What is the CEO's name?",
+      "response": "Based on the context provided in Documents 1, 2, 3, 4, and 5, the CEO of the company is Sarah Williams.",
+      "ground_truth": "Sarah Williams",
+      "correct": true,
+      "latency": 9.4311203956604,
+      "tokens": 36,
+      "semantic_similarity": 0.05,
+      "metadata": {
+        "fact": "The CEO of the company is Sarah Williams.",
+        "fact_type": "ceo_name",
+        "document_length": 1013,
+        "timestamp": "2025-12-01T10:29:04.506711"
+      }
+    },
+    {
+      "position": "middle",
+      "query": "What is the CEO's name?",
+      "response": "Based on the context provided in Documents 1-5, the CEO's name is Michael Brown.",
+      "ground_truth": "Michael Brown",
+      "correct": true,
+      "latency": 8.386470556259155,
+      "tokens": 25,
+      "semantic_similarity": 0.07142857142857142,
+      "metadata": {
+        "fact": "The CEO of the company is Michael Brown.",
+        "fact_type": "ceo_name",
+        "document_length": 1040,
+        "timestamp": "2025-12-01T10:29:12.898196"
+      }
+    },
+    {
+      "position": "middle",
+      "query": "What is the CEO's name?",
+      "response": "Based on the context provided in Documents 1-5, the CEO of the company is David Cohen.",
+      "ground_truth": "David Cohen",
+      "correct": true,
+      "latency": 8.09900450706482,
+      "tokens": 26,
+      "semantic_similarity": 0.06666666666666667,
+      "metadata": {
+        "fact": "The CEO of the company is David Cohen.",
+        "fact_type": "ceo_name",
+        "document_length": 1022,
+        "timestamp": "2025-12-01T10:29:21.004870"
+      }
+    },
+    {
+      "position": "middle",
+      "query": "What is the CEO's name?",
+      "response": "Based on the context provided in Documents 1-5, the CEO's name is Sarah Williams.",
+      "ground_truth": "Sarah Williams",
+      "correct": true,
+      "latency": 8.264030456542969,
+      "tokens": 25,
+      "semantic_similarity": 0.07142857142857142,
+      "metadata": {
+        "fact": "The CEO of the company is Sarah Williams.",
+        "fact_type": "ceo_name",
+        "document_length": 1084,
+        "timestamp": "2025-12-01T10:29:29.274977"
+      }
+    },
+    {
+      "position": "middle",
+      "query": "What is the CEO's name?",
+      "response": "Based on the context provided in Documents 1-5, the CEO of the company is Sarah Williams.",
+      "ground_truth": "Sarah Williams",
+      "correct": true,
+      "latency": 8.27808928489685,
+      "tokens": 25,
+      "semantic_similarity": 0.06666666666666667,
+      "metadata": {
+        "fact": "The CEO of the company is Sarah Williams.",
+        "fact_type": "ceo_name",
+        "document_length": 1073,
+        "timestamp": "2025-12-01T10:29:37.556824"
+      }
+    },
+    {
+      "position": "middle",
+      "query": "What is the CEO's name?",
+      "response": "Based on the context provided in Documents 1-5, the CEO of the company is David Cohen.",
+      "ground_truth": "David Cohen",
+      "correct": true,
+      "latency": 8.362743854522705,
+      "tokens": 26,
+      "semantic_similarity": 0.06666666666666667,
+      "metadata": {
+        "fact": "The CEO of the company is David Cohen.",
+        "fact_type": "ceo_name",
+        "document_length": 1020,
+        "timestamp": "2025-12-01T10:29:45.926826"
+      }
+    },
+    {
+      "position": "middle",
+      "query": "What is the CEO's name?",
+      "response": "Based on the context provided in Documents 1-5, the CEO's name is David Cohen.",
+      "ground_truth": "David Cohen",
+      "correct": true,
+      "latency": 8.459746837615967,
+      "tokens": 26,
+      "semantic_similarity": 0.07142857142857142,
+      "metadata": {
+        "fact": "The CEO of the company is David Cohen.",
+        "fact_type": "ceo_name",
+        "document_length": 1025,
+        "timestamp": "2025-12-01T10:29:54.391005"
+      }
+    },
+    {
+      "position": "middle",
+      "query": "What is the CEO's name?",
+      "response": "Based on the context provided in Documents 1-5, the CEO of the company is David Cohen.",
+      "ground_truth": "David Cohen",
+      "correct": true,
+      "latency": 8.267690658569336,
+      "tokens": 26,
+      "semantic_similarity": 0.06666666666666667,
+      "metadata": {
+        "fact": "The CEO of the company is David Cohen.",
+        "fact_type": "ceo_name",
+        "document_length": 1033,
+        "timestamp": "2025-12-01T10:30:02.666486"
+      }
+    },
+    {
+      "position": "end",
+      "query": "What is the CEO's name?",
+      "response": "Based on the context provided in Documents 1-5, the CEO of the company is Michael Brown.",
+      "ground_truth": "Michael Brown",
+      "correct": true,
+      "latency": 8.309590339660645,
+      "tokens": 25,
+      "semantic_similarity": 0.06666666666666667,
+      "metadata": {
+        "fact": "The CEO of the company is Michael Brown.",
+        "fact_type": "ceo_name",
+        "document_length": 1030,
+        "timestamp": "2025-12-01T10:30:10.983202"
+      }
+    },
+    {
+      "position": "end",
+      "query": "What is the CEO's name?",
+      "response": "Based on the context provided in Documents 1-5, the CEO of the company is Michael Brown.",
+      "ground_truth": "Michael Brown",
+      "correct": true,
+      "latency": 8.14024305343628,
+      "tokens": 25,
+      "semantic_similarity": 0.06666666666666667,
+      "metadata": {
+        "fact": "The CEO of the company is Michael Brown.",
+        "fact_type": "ceo_name",
+        "document_length": 1015,
+        "timestamp": "2025-12-01T10:30:19.126768"
+      }
+    },
+    {
+      "position": "end",
+      "query": "What is the CEO's name?",
+      "response": "Based on the context provided in Documents 1 to 5, the CEO of the company is Sarah Williams.",
+      "ground_truth": "Sarah Williams",
+      "correct": true,
+      "latency": 8.358561277389526,
+      "tokens": 26,
+      "semantic_similarity": 0.058823529411764705,
+      "metadata": {
+        "fact": "The CEO of the company is Sarah Williams.",
+        "fact_type": "ceo_name",
+        "document_length": 1051,
+        "timestamp": "2025-12-01T10:30:27.492572"
+      }
+    },
+    {
+      "position": "end",
+      "query": "What is the CEO's name?",
+      "response": "Based on the context provided in Documents 1, 2, 3, 4, and 5, the CEO's name is David Cohen.",
+      "ground_truth": "David Cohen",
+      "correct": true,
+      "latency": 9.404185771942139,
+      "tokens": 37,
+      "semantic_similarity": 0.05263157894736842,
+      "metadata": {
+        "fact": "The CEO of the company is David Cohen.",
+        "fact_type": "ceo_name",
+        "document_length": 1062,
+        "timestamp": "2025-12-01T10:30:36.904913"
+      }
+    },
+    {
+      "position": "end",
+      "query": "What is the CEO's name?",
+      "response": "Based on the context provided in Documents 1-5, the CEO of the company is Michael Brown.",
+      "ground_truth": "Michael Brown",
+      "correct": true,
+      "latency": 8.222189903259277,
+      "tokens": 25,
+      "semantic_similarity": 0.06666666666666667,
+      "metadata": {
+        "fact": "The CEO of the company is Michael Brown.",
+        "fact_type": "ceo_name",
+        "document_length": 1006,
+        "timestamp": "2025-12-01T10:30:45.127615"
+      }
+    },
+    {
+      "position": "end",
+      "query": "What is the CEO's name?",
+      "response": "Based on the context provided in Documents 1-5, the CEO of the company is Sarah Williams.",
+      "ground_truth": "Sarah Williams",
+      "correct": true,
+      "latency": 8.118154048919678,
+      "tokens": 25,
+      "semantic_similarity": 0.06666666666666667,
+      "metadata": {
+        "fact": "The CEO of the company is Sarah Williams.",
+        "fact_type": "ceo_name",
+        "document_length": 1048,
+        "timestamp": "2025-12-01T10:30:53.254618"
+      }
+    },
+    {
+      "position": "end",
+      "query": "What is the CEO's name?",
+      "response": "Based on the context provided in Documents 1-5, the CEO's name is Sarah Williams.",
+      "ground_truth": "Sarah Williams",
+      "correct": true,
+      "latency": 8.13338828086853,
+      "tokens": 25,
+      "semantic_similarity": 0.07142857142857142,
+      "metadata": {
+        "fact": "The CEO of the company is Sarah Williams.",
+        "fact_type": "ceo_name",
+        "document_length": 1060,
+        "timestamp": "2025-12-01T10:31:01.395416"
+      }
+    },
+    {
+      "position": "end",
+      "query": "What is the CEO's name?",
+      "response": "Based on the context provided in Documents 1-5, the CEO of the company is Sarah Williams.",
+      "ground_truth": "Sarah Williams",
+      "correct": true,
+      "latency": 8.30376148223877,
+      "tokens": 25,
+      "semantic_similarity": 0.06666666666666667,
+      "metadata": {
+        "fact": "The CEO of the company is Sarah Williams.",
+        "fact_type": "ceo_name",
+        "document_length": 1079,
+        "timestamp": "2025-12-01T10:31:09.701644"
+      }
+    },
+    {
+      "position": "end",
+      "query": "What is the CEO's name?",
+      "response": "Based on the context provided in Documents 1-5, the CEO of the company is Sarah Williams.",
+      "ground_truth": "Sarah Williams",
+      "correct": true,
+      "latency": 8.167975664138794,
+      "tokens": 25,
+      "semantic_similarity": 0.06666666666666667,
+      "metadata": {
+        "fact": "The CEO of the company is Sarah Williams.",
+        "fact_type": "ceo_name",
+        "document_length": 1021,
+        "timestamp": "2025-12-01T10:31:17.878389"
+      }
+    },
+    {
+      "position": "end",
+      "query": "What is the CEO's name?",
+      "response": "Based on the context provided in Documents 1-5, the CEO of the company is Michael Brown.",
+      "ground_truth": "Michael Brown",
+      "correct": true,
+      "latency": 8.112481355667114,
+      "tokens": 25,
+      "semantic_similarity": 0.06666666666666667,
+      "metadata": {
+        "fact": "The CEO of the company is Michael Brown.",
+        "fact_type": "ceo_name",
+        "document_length": 1066,
+        "timestamp": "2025-12-01T10:31:25.995920"
+      }
+    },
+    {
+      "position": "end",
+      "query": "What is the CEO's name?",
+      "response": "Based on the context provided in Documents 1-5, the CEO of the company is Michael Brown.",
+      "ground_truth": "Michael Brown",
+      "correct": true,
+      "latency": 8.014854669570923,
+      "tokens": 25,
+      "semantic_similarity": 0.06666666666666667,
+      "metadata": {
+        "fact": "The CEO of the company is Michael Brown.",
+        "fact_type": "ceo_name",
+        "document_length": 1003,
+        "timestamp": "2025-12-01T10:31:34.013521"
+      }
+    },
+    {
+      "position": "end",
+      "query": "What is the CEO's name?",
+      "response": "Based on the context provided in Documents 1-5, the CEO's name is Sarah Williams.",
+      "ground_truth": "Sarah Williams",
+      "correct": true,
+      "latency": 8.377934455871582,
+      "tokens": 25,
+      "semantic_similarity": 0.07142857142857142,
+      "metadata": {
+        "fact": "The CEO of the company is Sarah Williams.",
+        "fact_type": "ceo_name",
+        "document_length": 1042,
+        "timestamp": "2025-12-01T10:31:42.396368"
+      }
+    },
+    {
+      "position": "end",
+      "query": "What is the CEO's name?",
+      "response": "Based on the context provided in Documents 1-5, the CEO of the company is Sarah Williams.",
+      "ground_truth": "Sarah Williams",
+      "correct": true,
+      "latency": 7.930623769760132,
+      "tokens": 25,
+      "semantic_similarity": 0.06666666666666667,
+      "metadata": {
+        "fact": "The CEO of the company is Sarah Williams.",
+        "fact_type": "ceo_name",
+        "document_length": 1012,
+        "timestamp": "2025-12-01T10:31:50.332753"
+      }
+    },
+    {
+      "position": "end",
+      "query": "What is the CEO's name?",
+      "response": "Based on the context provided in Documents 1-5, the CEO of the company is Michael Brown.",
+      "ground_truth": "Michael Brown",
+      "correct": true,
+      "latency": 8.082547664642334,
+      "tokens": 25,
+      "semantic_similarity": 0.06666666666666667,
+      "metadata": {
+        "fact": "The CEO of the company is Michael Brown.",
+        "fact_type": "ceo_name",
+        "document_length": 1029,
+        "timestamp": "2025-12-01T10:31:58.424246"
+      }
+    },
+    {
+      "position": "end",
+      "query": "What is the CEO's name?",
+      "response": "Based on the context provided in Documents 1-5, the CEO's name is Sarah Williams.",
+      "ground_truth": "Sarah Williams",
+      "correct": true,
+      "latency": 8.156623840332031,
+      "tokens": 25,
+      "semantic_similarity": 0.07142857142857142,
+      "metadata": {
+        "fact": "The CEO of the company is Sarah Williams.",
+        "fact_type": "ceo_name",
+        "document_length": 1022,
+        "timestamp": "2025-12-01T10:32:06.586315"
+      }
+    },
+    {
+      "position": "end",
+      "query": "What is the CEO's name?",
+      "response": "Based on the context provided in Documents 1-5, the CEO of the company is Sarah Williams.",
+      "ground_truth": "Sarah Williams",
+      "correct": true,
+      "latency": 7.961431264877319,
+      "tokens": 25,
+      "semantic_similarity": 0.06666666666666667,
+      "metadata": {
+        "fact": "The CEO of the company is Sarah Williams.",
+        "fact_type": "ceo_name",
+        "document_length": 1010,
+        "timestamp": "2025-12-01T10:32:14.555520"
+      }
+    },
+    {
+      "position": "end",
+      "query": "What is the CEO's name?",
+      "response": "Based on the context provided in Documents 1-5, the CEO of the company is Sarah Williams.",
+      "ground_truth": "Sarah Williams",
+      "correct": true,
+      "latency": 8.20227575302124,
+      "tokens": 25,
+      "semantic_similarity": 0.06666666666666667,
+      "metadata": {
+        "fact": "The CEO of the company is Sarah Williams.",
+        "fact_type": "ceo_name",
+        "document_length": 1004,
+        "timestamp": "2025-12-01T10:32:22.764857"
+      }
+    },
+    {
+      "position": "end",
+      "query": "What is the CEO's name?",
+      "response": "Based on the context provided in Documents 1-5, the CEO's name is Michael Brown.",
+      "ground_truth": "Michael Brown",
+      "correct": true,
+      "latency": 8.242229461669922,
+      "tokens": 25,
+      "semantic_similarity": 0.07142857142857142,
+      "metadata": {
+        "fact": "The CEO of the company is Michael Brown.",
+        "fact_type": "ceo_name",
+        "document_length": 1020,
+        "timestamp": "2025-12-01T10:32:31.018502"
+      }
+    },
+    {
+      "position": "end",
+      "query": "What is the CEO's name?",
+      "response": "Based on the context provided in Documents 1-5, the CEO's name is David Cohen.",
+      "ground_truth": "David Cohen",
+      "correct": true,
+      "latency": 8.2082679271698,
+      "tokens": 26,
+      "semantic_similarity": 0.07142857142857142,
+      "metadata": {
+        "fact": "The CEO of the company is David Cohen.",
+        "fact_type": "ceo_name",
+        "document_length": 1003,
+        "timestamp": "2025-12-01T10:32:39.229067"
+      }
+    },
+    {
+      "position": "end",
+      "query": "What is the CEO's name?",
+      "response": "Based on the context provided in Documents 1-5, the CEO of the company is Michael Brown.",
+      "ground_truth": "Michael Brown",
+      "correct": true,
+      "latency": 8.243013620376587,
+      "tokens": 25,
+      "semantic_similarity": 0.06666666666666667,
+      "metadata": {
+        "fact": "The CEO of the company is Michael Brown.",
+        "fact_type": "ceo_name",
+        "document_length": 1020,
+        "timestamp": "2025-12-01T10:32:47.479778"
+      }
+    },
+    {
+      "position": "end",
+      "query": "What is the CEO's name?",
+      "response": "Based on the context provided in Documents 1-5, the CEO of the company is Michael Brown.",
+      "ground_truth": "Michael Brown",
+      "correct": true,
+      "latency": 8.17815899848938,
+      "tokens": 25,
+      "semantic_similarity": 0.06666666666666667,
+      "metadata": {
+        "fact": "The CEO of the company is Michael Brown.",
+        "fact_type": "ceo_name",
+        "document_length": 1070,
+        "timestamp": "2025-12-01T10:32:55.661014"
+      }
+    },
+    {
+      "position": "end",
+      "query": "What is the CEO's name?",
+      "response": "Based on the context provided in Documents 1-5, the CEO of the company is Michael Brown.",
+      "ground_truth": "Michael Brown",
+      "correct": true,
+      "latency": 8.37066102027893,
+      "tokens": 25,
+      "semantic_similarity": 0.06666666666666667,
+      "metadata": {
+        "fact": "The CEO of the company is Michael Brown.",
+        "fact_type": "ceo_name",
+        "document_length": 1054,
+        "timestamp": "2025-12-01T10:33:04.033079"
+      }
+    },
+    {
+      "position": "end",
+      "query": "What is the CEO's name?",
+      "response": "Based on the context provided in Documents 1-5, the CEO's name is Michael Brown.",
+      "ground_truth": "Michael Brown",
+      "correct": true,
+      "latency": 8.466012716293335,
+      "tokens": 25,
+      "semantic_similarity": 0.07142857142857142,
+      "metadata": {
+        "fact": "The CEO of the company is Michael Brown.",
+        "fact_type": "ceo_name",
+        "document_length": 1044,
+        "timestamp": "2025-12-01T10:33:12.506657"
+      }
+    },
+    {
+      "position": "end",
+      "query": "What is the CEO's name?",
+      "response": "Based on the context provided in Documents 1-5, the CEO of the company is David Cohen.",
+      "ground_truth": "David Cohen",
+      "correct": true,
+      "latency": 8.142913818359375,
+      "tokens": 26,
+      "semantic_similarity": 0.06666666666666667,
+      "metadata": {
+        "fact": "The CEO of the company is David Cohen.",
+        "fact_type": "ceo_name",
+        "document_length": 1008,
+        "timestamp": "2025-12-01T10:33:20.652332"
+      }
+    },
+    {
+      "position": "end",
+      "query": "What is the CEO's name?",
+      "response": "Based on the context provided in Documents 1-5, the CEO of the company is David Cohen.",
+      "ground_truth": "David Cohen",
+      "correct": true,
+      "latency": 8.129446983337402,
+      "tokens": 26,
+      "semantic_similarity": 0.06666666666666667,
+      "metadata": {
+        "fact": "The CEO of the company is David Cohen.",
+        "fact_type": "ceo_name",
+        "document_length": 1006,
+        "timestamp": "2025-12-01T10:33:28.785408"
+      }
+    },
+    {
+      "position": "end",
+      "query": "What is the CEO's name?",
+      "response": "Based on the context provided in Documents 1, 2, 3, 4, and 5, the CEO of the company is Michael Brown.",
+      "ground_truth": "Michael Brown",
+      "correct": true,
+      "latency": 9.478175401687622,
+      "tokens": 36,
+      "semantic_similarity": 0.05,
+      "metadata": {
+        "fact": "The CEO of the company is Michael Brown.",
+        "fact_type": "ceo_name",
+        "document_length": 1080,
+        "timestamp": "2025-12-01T10:33:38.266244"
+      }
+    },
+    {
+      "position": "end",
+      "query": "What is the CEO's name?",
+      "response": "Based on the context provided in Documents 1-5, the CEO of the company is Sarah Williams.",
+      "ground_truth": "Sarah Williams",
+      "correct": true,
+      "latency": 8.147809743881226,
+      "tokens": 25,
+      "semantic_similarity": 0.06666666666666667,
+      "metadata": {
+        "fact": "The CEO of the company is Sarah Williams.",
+        "fact_type": "ceo_name",
+        "document_length": 1014,
+        "timestamp": "2025-12-01T10:33:46.421237"
+      }
+    },
+    {
+      "position": "end",
+      "query": "What is the CEO's name?",
+      "response": "Based on the context provided in Documents 1-5, the CEO of the company is Sarah Williams.",
+      "ground_truth": "Sarah Williams",
+      "correct": true,
+      "latency": 8.266097068786621,
+      "tokens": 25,
+      "semantic_similarity": 0.06666666666666667,
+      "metadata": {
+        "fact": "The CEO of the company is Sarah Williams.",
+        "fact_type": "ceo_name",
+        "document_length": 1059,
+        "timestamp": "2025-12-01T10:33:54.691670"
+      }
+    },
+    {
+      "position": "end",
+      "query": "What is the CEO's name?",
+      "response": "Based on the context provided in Documents 1-5, the CEO's name is Sarah Williams.",
+      "ground_truth": "Sarah Williams",
+      "correct": true,
+      "latency": 8.141491174697876,
+      "tokens": 25,
+      "semantic_similarity": 0.07142857142857142,
+      "metadata": {
+        "fact": "The CEO of the company is Sarah Williams.",
+        "fact_type": "ceo_name",
+        "document_length": 1067,
+        "timestamp": "2025-12-01T10:34:02.838395"
+      }
+    },
+    {
+      "position": "end",
+      "query": "What is the CEO's name?",
+      "response": "Based on the context provided in Documents 1-5, the CEO of the company is Sarah Williams.",
+      "ground_truth": "Sarah Williams",
+      "correct": true,
+      "latency": 7.849509954452515,
+      "tokens": 25,
+      "semantic_similarity": 0.06666666666666667,
+      "metadata": {
+        "fact": "The CEO of the company is Sarah Williams.",
+        "fact_type": "ceo_name",
+        "document_length": 1014,
+        "timestamp": "2025-12-01T10:34:10.695157"
+      }
+    }
+  ],
+  "summary": {
+    "start": {
+      "num_trials": 30,
+      "accuracy": {
+        "mean": 1.0,
+        "std": 0.0,
+        "values": [
+          1.0,
+          1.0,
+          1.0,
+          1.0,
+          1.0,
+          1.0,
+          1.0,
+          1.0,
+          1.0,
+          1.0,
+          1.0,
+          1.0,
+          1.0,
+          1.0,
+          1.0,
+          1.0,
+          1.0,
+          1.0,
+          1.0,
+          1.0,
+          1.0,
+          1.0,
+          1.0,
+          1.0,
+          1.0,
+          1.0,
+          1.0,
+          1.0,
+          1.0,
+          1.0
+        ]
+      },
+      "latency": {
+        "mean": 9.750766921043397,
+        "std": 2.5252284098907367,
+        "min": 8.28684949874878,
+        "max": 23.110844612121582
+      },
+      "semantic_similarity": {
+        "mean": 0.06904761904761905,
+        "std": 0.0023809523809523794
+      }
+    },
+    "middle": {
+      "num_trials": 30,
+      "accuracy": {
+        "mean": 1.0,
+        "std": 0.0,
+        "values": [
+          1.0,
+          1.0,
+          1.0,
+          1.0,
+          1.0,
+          1.0,
+          1.0,
+          1.0,
+          1.0,
+          1.0,
+          1.0,
+          1.0,
+          1.0,
+          1.0,
+          1.0,
+          1.0,
+          1.0,
+          1.0,
+          1.0,
+          1.0,
+          1.0,
+          1.0,
+          1.0,
+          1.0,
+          1.0,
+          1.0,
+          1.0,
+          1.0,
+          1.0,
+          1.0
+        ]
+      },
+      "latency": {
+        "mean": 8.724335281054179,
+        "std": 0.8121607003232774,
+        "min": 7.93537163734436,
+        "max": 11.312159538269043
+      },
+      "semantic_similarity": {
+        "mean": 0.06708333333333334,
+        "std": 0.0038672156835192328
+      }
+    },
+    "end": {
+      "num_trials": 30,
+      "accuracy": {
+        "mean": 1.0,
+        "std": 0.0,
+        "values": [
+          1.0,
+          1.0,
+          1.0,
+          1.0,
+          1.0,
+          1.0,
+          1.0,
+          1.0,
+          1.0,
+          1.0,
+          1.0,
+          1.0,
+          1.0,
+          1.0,
+          1.0,
+          1.0,
+          1.0,
+          1.0,
+          1.0,
+          1.0,
+          1.0,
+          1.0,
+          1.0,
+          1.0,
+          1.0,
+          1.0,
+          1.0,
+          1.0,
+          1.0,
+          1.0
+        ]
+      },
+      "latency": {
+        "mean": 8.262020349502563,
+        "std": 0.3414168906977098,
+        "min": 7.849509954452515,
+        "max": 9.478175401687622
+      },
+      "semantic_similarity": {
+        "mean": 0.06649294805641555,
+        "std": 0.004810062650767092
+      }
+    }
+  }
+}

@@ -1,0 +1,90 @@
+{
+  "timestamp": "2025-12-01 12:15:55",
+  "aggregate_metrics": {
+    "total_queries": 40,
+    "by_approach": {
+      "RAG": {
+        "count": 30,
+        "accuracy": 0.06666666666666667,
+        "mean_latency": 28.86103486220042,
+        "std_latency": 20.361360875570664,
+        "mean_tokens": 266.7,
+        "mean_similarity": 0.0
+      },
+      "FullContext": {
+        "count": 10,
+        "accuracy": 0.2,
+        "mean_latency": 33.50276172161102,
+        "std_latency": 23.046526752257765,
+        "mean_tokens": 262.5,
+        "mean_similarity": 0.0
+      }
+    },
+    "by_query_type": {
+      "factual": {
+        "count": 20,
+        "accuracy": 0.1,
+        "mean_latency": 10.366345965862275,
+        "std_latency": 2.649576426088476,
+        "mean_tokens": 67.6,
+        "mean_similarity": 0.0
+      },
+      "analytical": {
+        "count": 20,
+        "accuracy": 0.0,
+        "mean_latency": 49.676587188243865,
+        "std_latency": 10.763853659331911,
+        "mean_tokens": 463.7,
+        "mean_similarity": 0.0
+      }
+    },
+    "by_top_k": {
+      "k=1": {
+        "count": 10,
+        "accuracy": 0.0,
+        "mean_latency": 28.295333981513977,
+        "std_latency": 21.14316988469996,
+        "mean_tokens": 295.3,
+        "mean_similarity": 0.0
+      },
+      "k=3": {
+        "count": 10,
+        "accuracy": 0.2,
+        "mean_latency": 25.376111769676207,
+        "std_latency": 17.14449188606176,
+        "mean_tokens": 242.9,
+        "mean_similarity": 0.0
+      },
+      "k=5": {
+        "count": 10,
+        "accuracy": 0.0,
+        "mean_latency": 32.911658835411075,
+        "std_latency": 21.769601610768433,
+        "mean_tokens": 261.9,
+        "mean_similarity": 0.0
+      }
+    }
+  },
+  "statistical_tests": {
+    "latency_rag_vs_full": {
+      "t_statistic": -0.5881869420813923,
+      "p_value": 0.5598866309115477,
+      "cohens_d": -0.21477550413864213,
+      "significant": false,
+      "paired": false,
+      "alternative": "two-sided"
+    },
+    "accuracy_across_top_k": {
+      "f_statistic": 0.9999999999999998,
+      "p_value": 0.3965694566039659,
+      "eta_squared": 0.14285714285714288,
+      "significant": false,
+      "num_groups": 3,
+      "group_names": [
+        "k=1",
+        "k=3",
+        "k=5"
+      ]
+    }
+  }
+}
